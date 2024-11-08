@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auftdart</title>
+    <link rel="icon" href="./images/SOGE Logo_shape.png" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="./tailwind.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="font-sans overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed inset-0 z-10 h-fit w-screen">
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <a href="#" class="flex items-center">
+          <!-- Logo -->
+          <img
+            src="./images/logo-color.jpg"
+            alt="Educate Logo"
+            class="w-44 h-12"
+          />
+        </a>
+        <!-- Menu for Large Screens -->
+        <div class="hidden md:flex space-x-6 font-semibold">
+          <a href="#info" class="text-gray-800 hover:text-red-1">THÔNG TIN</a>
+          <a href="#about" class="text-gray-800 hover:text-red-1"
+            >VỀ AUFTDART</a
+          >
+          <a href="#teacher" class="text-gray-800 hover:text-red-1"
+            >GIẢNG VIÊN</a
+          >
+
+          <a href="#reasons" class="text-gray-800 hover:text-red-1">LÝ DO</a>
+          <a href="#contact" class="text-gray-800 hover:text-red-1">LIÊN HỆ</a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-gray-800" id="menu-toggle">
+          <img src="./images/menu.png" alt="Menu" class="w-6 h-6" />
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        class="md:hidden bg-white border-t border-gray-200 py-3 transition-all duration-300"
+        id="mobile-menu"
+        style="display: none"
+      >
+        <a href="#info" class="block px-6 py-2 text-gray-800 hover:text-red-1"
+          >THÔNG TIN</a
+        >
+        <a href="#about" class="block px-6 py-2 text-gray-800 hover:text-red-1"
+          >VỀ AUFTDART</a
+        >
+        <a
+          href="#teacher"
+          class="block px-6 py-2 text-gray-800 hover:text-red-1"
+          >GIẢNG VIÊN</a
+        >
+        <a
+          href="#reasons"
+          class="block px-6 py-2 text-gray-800 hover:text-red-1"
+          >LÝ DO</a
+        >
+        <a
+          href="#contact"
+          class="block px-6 py-2 text-gray-800 hover:text-red-1"
+          >LIÊN HỆ</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen">
+      <div class="h-screen pt-10">
+        <picture>
+          <source
+            media="(min-width:1025px)"
+            srcset="./images/LandingPage-01.png"
+          />
+          <img src="./images/LandingPage-02.png" alt="auftdart-hero-banner" />
+        </picture>
+      </div>
+    </section>
+
+    <section class="bg-blue-1/20 relative" id="info">
+      <div
+        class="animation-rightLeft-1 w-12 h-12 rounded-lg absolute hidden lg:block lg:right-20 lg:inset-y-1/4 opacity-50"
+      >
+        <img src="./images/piano-1.png" alt="auftdart-art" loading="lazy" />
+      </div>
+      <div class="container mx-auto px-4 py-12 lg:py-24">
+        <div class="flex flex-col items-center lg:flex-row">
+          <!-- Left Image Placeholder -->
+          <div
+            class="lg:w-1/2 relative"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-offset="300"
+          >
+            <img
+              src="./images/LandingPage-03.png"
+              alt="auftdart"
+              class="rounded-lg"
+              loading="lazy"
+            />
+            <div
+              class="animation-upDown-2 w-12 h-12 rounded-lg absolute hidden lg:block lg:inset-y-10 opacity-50"
+            >
+              <img
+                src="./images/music-1.png"
+                alt="auftdart-music"
+                loading="lazy"
+              />
+            </div>
+            <div
+              class="animation-leftRight-1 w-12 h-12 rounded-lg absolute hidden lg:block lg:right-0 lg:bottom-0 opacity-50"
+            >
+              <img src="./images/art-1.png" alt="auftdart-art" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- Right Content Section -->
+          <div
+            class="lg:w-1/2 lg:ml-24 mt-12 lg:mt-0"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-offset="300"
+          >
+            <h1>
+              <span class="text-3xl lg:text-5xl font-bold text-gray-800">
+                AUFTDART OPEN DAY</span
+              ><br />
+              <span class="block mt-4 text-xl lg:text-3xl font-semibold">
+                <span class="text-blue-2">Học sáng tạo</span
+                ><span class="text-yellow-1"> - </span
+                ><span class="text-red-1">Chơi thông thái</span>
+              </span>
+            </h1>
+            <p class="text-gray-800 mt-2">
+              Hãy cùng trẻ khám phá chương trình học Acellus offline hoàn toàn
+              miễn phí tại Auftdart Open Day chỉ trong tháng 11 này!
+            </p>
+
+            <!-- Statistics Section -->
+            <div class="flex mt-6 space-x-8">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-lg p-6 shadow-xl text-center">
+                  <div class="flex justify-center mb-4">
+                    <div
+                      class="w-16 h-16 bg-blue-1/30 rounded-full flex items-center justify-center"
+                    >
+                      <!-- Icon (Placeholder) -->
+                      <img
+                        src="./images/LandingPage-18.png"
+                        alt="Personalized Learning Icon"
+                        class="w-10 h-10"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="text-xl font-semibold mb-2">ĐỊA ĐIỂM</h3>
+                  <p class="text-gray-800">
+                    Global City, số 4-6-8, Khu phố 14, Phường An Phú, TP. Thủ
+                    Đức, TP. Hồ Chí Minh.
+                  </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-lg p-6 shadow-lg text-center">
+                  <div class="flex justify-center mb-4">
+                    <div
+                      class="w-16 h-16 bg-red-1/10 rounded-full flex items-center justify-center"
+                    >
+                      <!-- Icon (Placeholder) -->
+                      <img
+                        src="./images/LandingPage-17.png"
+                        alt="Trusted Content Icon"
+                        class="w-10 h-10"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="text-xl font-semibold mb-2">THỜI GIAN</h3>
+                  <p class="text-gray-800">
+                    8h00 - 16h00 ngày 16/11/2024 (Thứ 7)
+                  </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-lg p-6 shadow-lg text-center">
+                  <div class="flex justify-center mb-4">
+                    <div
+                      class="w-16 h-16 bg-yellow-1/20 rounded-full flex items-center justify-center"
+                    >
+                      <!-- Icon (Placeholder) -->
+                      <img
+                        src="./images/LandingPage-19.png"
+                        alt="Tool Empower Teachers Icon"
+                        class="w-10 h-10"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="text-xl font-semibold mb-2">HÌNH THỨC</h3>
+                  <p class="text-gray-800">Offline</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-6 space-x-8 mb-8 lg:mb-0 space-y-4 lg:pr-10">
+              <p class="text-gray-700">
+                Với phương pháp học tập Sáng tạo, Thực tế và Hấp dẫn được dẫn
+                dắt bởi các Giáo viên bản ngữ có chuyên môn Sư phạm giảng dạy,
+                trẻ sẽ được:
+              </p>
+              <p class="text-gray-700">
+                <span class="text-darkgreen-1 text-lg mr-2">&#10003;</span
+                ><strong
+                  >Tiếp cận chương trình kiến thức phổ thông của Mỹ -
+                  Acellus</strong
+                >
+                đã được pháp luật các nước như Anh, Mỹ, Úc công nhận với 4 môn
+                học chính: Mathematics, Language Arts, Science và Social Studies
+              </p>
+              <p class="text-gray-700">
+                <span class="text-darkgreen-1 text-lg mr-2">&#10003;</span
+                ><strong
+                  >Mở rộng kiến thức bằng các trải nghiệm thực tế:</strong
+                >
+                thực hành thí nghiệm khoa học, phát triển ý tưởng và ngôn ngữ
+                qua kể chuyện bằng hình ảnh,...
+              </p>
+              <p class="text-gray-700">
+                <span class="text-darkgreen-1 text-lg mr-2">&#10003;</span
+                ><strong
+                  >Rèn luyện tư duy và phản xạ tiếng Anh trong giao tiếp</strong
+                >
+              </p>
+            </div>
+            <!-- Profile and Link -->
+            <div class="flex items-center mt-8">
+              <a
+                href="https://forms.gle/VdgfcKpHYaYHzZ6R7"
+                class="default-btn-red"
+              >
+                Tham Gia Ngay <span class="ml-2">→</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div
+        class="container mx-auto py-24 px-4 flex flex-col lg:flex-row items-center"
+      >
+        <!-- Text Content -->
+        <div
+          class="lg:w-2/3 mb-8 lg:mb-0 lg:pr-8"
+          data-aos="fade-down-right"
+          data-aos-duration="1200"
+          data-aos-offset="300"
+        >
+          <h2 class="text-3xl font-bold mb-6">VỀ AUFTDART</h2>
+          <ul class="list-none space-y-4">
+            <li class="flex items-center text-gray-700">
+              <span class="text-darkgreen-1 text-lg mr-2">&#10003;</span>
+              <p>
+                <strong>Auftdart - School of Gifted Education</strong>
+                tự hào là đơn vị tại Việt Nam tiên phong kết hợp
+                <strong>Giáo dục và Nghệ thuật</strong> trong Đào tạo Quốc tế
+                cấp bằng Tốt nghiệp Trung học Mỹ (Diploma) với hình thức học
+                hoàn toàn Offline.
+              </p>
+            </li>
+            <li class="flex items-center text-gray-700">
+              <span class="text-darkgreen-1 text-lg mr-2">&#10003;</span>
+              <p>
+                Được tạo bệ phóng vững chắc bởi tiền thân là Auftdart - Academy
+                of Music and Performing Arts với gần 12 năm kinh nghiệm, và hệ
+                thống đào tạo chuyên sâu được nghiên cứu, phát triển bởi Viện
+                Khoa học và Công nghệ Quốc tế do tổ chức Acellus Academy cung
+                cấp, Auftdart - School of Gifted Education mang đến các chương
+                trình đào tạo giúp trẻ khám phá và phát triển bản thân một cách
+                Toàn diện và Sâu sắc:
+              </p>
+            </li>
+            <li class="flex items-center text-gray-700">
+              <span class="text-darkgreen-1 text-lg mr-2">&#10003;</span>
+              <p>
+                <strong>Chương trình Acellus Scholar (AS)</strong>, bao gồm: Hệ
+                phổ thông Mỹ Acellus kết hợp cùng các môn học Âm nhạc, Hội họa,
+                Kịch nghệ, Giáo dục thể chất và Phát triển tư duy đa chiều.
+              </p>
+            </li>
+            <li class="flex items-center text-gray-700">
+              <span class="text-darkgreen-1 text-lg mr-2">&#10003;</span>
+              <p>
+                <strong>Chương trình Advanced Acellus (AA)</strong> hướng đến
+                tấm bằng tốt nghiệp phổ thông trung học Mỹ.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Image Content -->
+        <div class="lg:w-1/3">
+          <img
+            src="./images/LandingPage-04.png"
+            alt="Students with folders"
+            class="w-full h-auto rounded-lg animation-hero-border"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-red-1/30" id="teacher">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-10">
+          <h2 class="text-4xl font-bold">GIẢNG VIÊN</h2>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper mb-20">
+            <!-- Team Member 1 -->
+            <div
+              class="border-t-4 border-white swiper-slide bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:border-blue-2 text-center"
+            >
+              <img
+                src="./images/LandingPage-05.png"
+                alt="Leonardo Bonucci"
+                class="w-full h-64 object-cover rounded-t-lg mb-4"
+                loading="lazy"
+              />
+              <h3 class="text-xl font-semibold">Leonardo Bonucci</h3>
+              <div class="flex justify-center space-x-3 my-3">
+                <a href="#" class="text-blue-600 hover:text-blue-700"
+                  ><i class="fab fa-facebook-f">F</i></a
+                >
+                <a href="#" class="text-blue-400 hover:text-blue-500"
+                  ><i class="fab fa-twitter">T</i></a
+                >
+                <a href="#" class="text-blue-700 hover:text-blue-800"
+                  ><i class="fab fa-linkedin-in">L</i></a
+                >
+                <a href="#" class="text-red-600 hover:text-red-700"
+                  ><i class="fab fa-youtube">Y</i></a
+                >
+              </div>
+              <p class="text-gray-500 mb-2">
+                <i class="fas fa-star"></i> Graphic Designer
+              </p>
+              <p class="text-gray-500 mb-2">
+                <i class="fas fa-phone-alt"></i> 0084 962 226 602
+              </p>
+              <p class="text-gray-500 mb-2">
+                <i class="fas fa-envelope"></i> contact@educate.com
+              </p>
+              <p class="text-gray-500">
+                <i class="fab fa-skype"></i> skype.educate
+              </p>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div
+              class="border-t-4 border-white swiper-slide bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:border-blue-2 text-center"
+            >
+              <img
+                src="./images/LandingPage-06.png"
+                alt="Leonardo Bonucci"
+                class="w-full h-64 object-cover rounded-t-lg mb-4"
+                loading="lazy"
+              />
+              <h3 class="text-xl font-semibold">Leonardo Bonucci</h3>
+              <div class="flex justify-center space-x-3 my-3">
+                <a href="#" class="text-blue-600 hover:text-blue-700"
+                  ><i class="fab fa-facebook-f">F</i></a
+                >
+                <a href="#" class="text-blue-400 hover:text-blue-500"
+                  ><i class="fab fa-twitter">T</i></a
+                >
+                <a href="#" class="text-blue-700 hover:text-blue-800"
+                  ><i class="fab fa-linkedin-in">L</i></a
+                >
+                <a href="#" class="text-red-600 hover:text-red-700"
+                  ><i class="fab fa-youtube">Y</i></a
+                >
+              </div>
+              <p class="text-gray-500 mb-2">
+                <i class="fas fa-star"></i> Graphic Designer
+              </p>
+              <p class="text-gray-500 mb-2">
+                <i class="fas fa-phone-alt"></i> 0084 962 226 602
+              </p>
+              <p class="text-gray-500 mb-2">
+                <i class="fas fa-envelope"></i> contact@educate.com
+              </p>
+              <p class="text-gray-500">
+                <i class="fab fa-skype"></i> skype.educate
+              </p>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div
+              class="border-t-4 border-white swiper-slide bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:border-blue-2 text-center"
+            >
+              <img
+                src="./images/LandingPage-07.png"
+                alt="Leonardo Bonucci"
+                class="w-full h-64 object-cover rounded-t-lg mb-4"
+                loading="lazy"
+              />
+              <h3 class="text-xl font-semibold">Leonardo Bonucci</h3>
+              <div class="flex justify-center space-x-3 my-3">
+                <a href="#" class="text-blue-600 hover:text-blue-700"
+                  ><i class="fab fa-facebook-f">F</i></a
+                >
+                <a href="#" class="text-blue-400 hover:text-blue-500"
+                  ><i class="fab fa-twitter">T</i></a
+                >
+                <a href="#" class="text-blue-700 hover:text-blue-800"
+                  ><i class="fab fa-linkedin-in">L</i></a
+                >
+                <a href="#" class="text-red-600 hover:text-red-700"
+                  ><i class="fab fa-youtube">Y</i></a
+                >
+              </div>
+              <p class="text-gray-500 mb-2">
+                <i class="fas fa-star"></i> Graphic Designer
+              </p>
+              <p class="text-gray-500 mb-2">
+                <i class="fas fa-phone-alt"></i> 0084 962 226 602
+              </p>
+              <p class="text-gray-500 mb-2">
+                <i class="fas fa-envelope"></i> contact@educate.com
+              </p>
+              <p class="text-gray-500">
+                <i class="fab fa-skype"></i> skype.educate
+              </p>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div
+              class="border-t-4 border-white swiper-slide bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:border-blue-2 text-center"
+            >
+              <img
+                src="./images/LandingPage-08.png"
+                alt="Leonardo Bonucci"
+                class="w-full h-64 object-cover rounded-t-lg mb-4"
+                loading="lazy"
+              />
+              <h3 class="text-xl font-semibold">Leonardo Bonucci</h3>
+              <div class="flex justify-center space-x-3 my-3">
+                <a href="#" class="text-blue-600 hover:text-blue-700"
+                  ><i class="fab fa-facebook-f">F</i></a
+                >
+                <a href="#" class="text-blue-400 hover:text-blue-500"
+                  ><i class="fab fa-twitter">T</i></a
+                >
+                <a href="#" class="text-blue-700 hover:text-blue-800"
+                  ><i class="fab fa-linkedin-in">L</i></a
+                >
+                <a href="#" class="text-red-600 hover:text-red-700"
+                  ><i class="fab fa-youtube">Y</i></a
+                >
+              </div>
+              <p class="text-gray-500 mb-2">
+                <i class="fas fa-star"></i> Graphic Designer
+              </p>
+              <p class="text-gray-500 mb-2">
+                <i class="fas fa-phone-alt"></i> 0084 962 226 602
+              </p>
+              <p class="text-gray-500 mb-2">
+                <i class="fas fa-envelope"></i> contact@educate.com
+              </p>
+              <p class="text-gray-500">
+                <i class="fab fa-skype"></i> skype.educate
+              </p>
+            </div>
+
+            <!-- Team Member 5 -->
+            <div
+              class="border-t-4 border-white swiper-slide bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:border-blue-2 text-center"
+            >
+              <img
+                src="./images/LandingPage-09.png"
+                alt="Leonardo Bonucci"
+                class="w-full h-64 object-cover rounded-t-lg mb-4"
+                loading="lazy"
+              />
+              <h3 class="text-xl font-semibold">Leonardo Bonucci</h3>
+              <div class="flex justify-center space-x-3 my-3">
+                <a href="#" class="text-blue-600 hover:text-blue-700"
+                  ><i class="fab fa-facebook-f">F</i></a
+                >
+                <a href="#" class="text-blue-400 hover:text-blue-500"
+                  ><i class="fab fa-twitter">T</i></a
+                >
+                <a href="#" class="text-blue-700 hover:text-blue-800"
+                  ><i class="fab fa-linkedin-in">L</i></a
+                >
+                <a href="#" class="text-red-600 hover:text-red-700"
+                  ><i class="fab fa-youtube">Y</i></a
+                >
+              </div>
+              <p class="text-gray-500 mb-2">
+                <i class="fas fa-star"></i> Graphic Designer
+              </p>
+              <p class="text-gray-500 mb-2">
+                <i class="fas fa-phone-alt"></i> 0084 962 226 602
+              </p>
+              <p class="text-gray-500 mb-2">
+                <i class="fas fa-envelope"></i> contact@educate.com
+              </p>
+              <p class="text-gray-500">
+                <i class="fab fa-skype"></i> skype.educate
+              </p>
+            </div>
+
+            <!-- Team Member 6 -->
+            <div
+              class="border-t-4 border-white swiper-slide bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:border-blue-2 text-center"
+            >
+              <img
+                src="./images/LandingPage-10.png"
+                alt="Leonardo Bonucci"
+                class="w-full h-64 object-cover rounded-t-lg mb-4"
+                loading="lazy"
+              />
+              <h3 class="text-xl font-semibold">Leonardo Bonucci</h3>
+              <div class="flex justify-center space-x-3 my-3">
+                <a href="#" class="text-blue-600 hover:text-blue-700"
+                  ><i class="fab fa-facebook-f">F</i></a
+                >
+                <a href="#" class="text-blue-400 hover:text-blue-500"
+                  ><i class="fab fa-twitter">T</i></a
+                >
+                <a href="#" class="text-blue-700 hover:text-blue-800"
+                  ><i class="fab fa-linkedin-in">L</i></a
+                >
+                <a href="#" class="text-red-600 hover:text-red-700"
+                  ><i class="fab fa-youtube">Y</i></a
+                >
+              </div>
+              <p class="text-gray-500 mb-2">
+                <i class="fas fa-star"></i> Graphic Designer
+              </p>
+              <p class="text-gray-500 mb-2">
+                <i class="fas fa-phone-alt"></i> 0084 962 226 602
+              </p>
+              <p class="text-gray-500 mb-2">
+                <i class="fas fa-envelope"></i> contact@educate.com
+              </p>
+              <p class="text-gray-500">
+                <i class="fab fa-skype"></i> skype.educate
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24">
+      <div class="flex items-center justify-center">
+        <div
+          class="border-2 border-red-1 text-white rounded-lg shadow-lg p-8 container"
+        >
+          <div
+            class="flex flex-col md:flex-row items-start md:items-center justify-between"
+          >
+            <!-- Text content -->
+            <div class="md:w-3/4">
+              <h2 class="text-5xl md:text-4xl font-semibold mb-4 text-gray-800">
+                AUFTDART OPEN DAY<br />
+                Học sáng tạo - Chơi thông thái
+              </h2>
+              <p class="text-lg text-gray-800">
+                Hãy cùng trẻ khám phá chương trình học Acellus offline hoàn toàn
+                miễn phí tại Auftdart Open Day chỉ trong tháng 11 này!
+              </p>
+            </div>
+
+            <!-- Button -->
+            <div class="flex items-center mt-8">
+              <a
+                href="https://forms.gle/VdgfcKpHYaYHzZ6R7"
+                class="default-btn-red"
+              >
+                Tham Gia Ngay <span class="ml-2">→</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Block 5 Section -->
+    <section class="bg-blue-1/30" id="reasons">
+      <div class="container px-4 py-24 mx-auto">
+        <div class="text-center mb-8">
+          <h2 class="text-4xl font-bold mb-12">
+            5 LÝ DO VÌ SAO NÊN CHỌN AUFTDART?
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-3">
+          <!-- Card 1 -->
+          <div
+            class="bg-white rounded-lg p-6 shadow-lg text-center"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-offset="200"
+            data-aos-delay="500"
+          >
+            <div class="flex justify-center mb-4">
+              <div
+                class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center"
+              >
+                <!-- Icon (Placeholder) -->
+                <img
+                  src="./images/LandingPage-13.png"
+                  alt="Personalized Learning Icon"
+                  class="w-10 h-10"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">
+              Chương Trình Đào Tạo Theo Chuẩn Hệ Mỹ
+            </h3>
+            <p class="text-gray-800">
+              Acellus được thẩm định bởi tổ chức giáo dục Accrediting commission
+              for school - ACS WASC.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white rounded-lg p-6 shadow-lg text-center"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-offset="200"
+            data-aos-delay="250"
+          >
+            <div class="flex justify-center mb-4">
+              <div
+                class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center"
+              >
+                <!-- Icon (Placeholder) -->
+                <img
+                  src="./images/LandingPage-15.png"
+                  alt="Trusted Content Icon"
+                  class="w-10 h-10"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Kinh Nghiệm</h3>
+            <p class="text-gray-800">
+              Đội ngũ giảng viên bản ngữ dày dặn kinh nghiệm với bằng cấp Sư
+              phạm liên quan đến lĩnh vực giảng dạy
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-white rounded-lg p-6 shadow-lg text-center"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-offset="200"
+          >
+            <div class="flex justify-center mb-4">
+              <div
+                class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center"
+              >
+                <!-- Icon (Placeholder) -->
+                <img
+                  src="./images/LandingPage-14.png"
+                  alt="Tool Empower Teachers Icon"
+                  class="w-10 h-10"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Kết Hợp Hài Hoà</h3>
+            <p class="text-gray-800">
+              Kết hợp giữa Học thuật, Nghệ thuật, và Thể chất một cách toàn diện
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:px-36 pt-8">
+          <!-- Card 4 -->
+          <div
+            class="bg-white rounded-lg p-6 shadow-lg text-center"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="250"
+            data-aos-offset="250"
+          >
+            <div class="flex justify-center mb-4">
+              <div
+                class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center"
+              >
+                <!-- Icon (Placeholder) -->
+                <img
+                  src="./images/LandingPage-20.png"
+                  alt="Personalized Learning Icon"
+                  class="w-10 h-10"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Chứng Nhận Quốc Tế</h3>
+            <p class="text-gray-800">
+              Nhận bằng tốt nghiệp Trung học phổ thông Mỹ theo chuẩn Common Core
+              State Standards được công nhận trên toàn thế giới
+            </p>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="bg-white rounded-lg p-6 shadow-lg text-center"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-offset="250"
+          >
+            <div class="flex justify-center mb-4">
+              <div
+                class="w-16 h-16 bg-lime-100 rounded-full flex items-center justify-center"
+              >
+                <!-- Icon (Placeholder) -->
+                <img
+                  src="./images/LandingPage-16.png"
+                  alt="Trusted Content Icon"
+                  class="w-10 h-10"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Học Phí</h3>
+            <p class="text-gray-800">Tối ưu hóa chi phí học tập</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-cover bg-center about-container">
+      <!-- Join Section -->
+      <div class="h-80 lg:h-128 bg-black relative">
+        <div class="h-full w-full">
+          <picture>
+            <source
+              media="(min-width:1025px)"
+              srcset="./images/LandingPage-11.png"
+            />
+            <img
+              src="./images/LandingPage-12.png"
+              alt="Flowers"
+              class="object-cover"
+              loading="lazy"
+            />
+          </picture>
+          <div
+            class="absolute bottom-[10%] inset-x-2/4 -translate-x-2/4 min-w-64 text-center"
+          >
+            <a
+              href="https://forms.gle/VdgfcKpHYaYHzZ6R7"
+              class="default-btn-red"
+            >
+              Tham Gia Ngay <span class="ml-2">→</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white font-sans" id="contact">
+      <div class="container mx-auto py-20">
+        <div
+          class="flex flex-col lg:flex-row lg:items-center justify-between items-start px-4"
+        >
+          <div class="text-center lg:text-left">
+            <div class="flex items-center">
+              <!-- Logo -->
+              <img
+                src="./images/logo.png"
+                alt="Educate Logo"
+                class="h-28 lg:m-0"
+                style="width: 90%; max-width: 24rem"
+                loading="lazy"
+              />
+            </div>
+            <!-- Addresses -->
+            <div class="mt-10 space-y-2 text-gray-300">
+              <p class="flex items-center">
+                <i class="fa fa-map-marker w-5 h-5 text-green-500 mr-2"></i>
+                Global City, No. 4-6-8, Quarter 14, Do Xuan Hop Street, An Phu
+                Ward, Thu Duc City.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Section -->
+          <div
+            class="mt-8 lg:mt-0 flex flex-col justify-between"
+            style="height: 165px"
+          >
+            <h2 class="text-2xl font-semibold mb-4">LIÊN HỆ</h2>
+            <div class="space-y-2 text-gray-300">
+              <p class="flex items-center">
+                <i class="fa fa-phone w-5 h-5 text-green-500 mr-2"></i>
+                070 339 3099 hoặc 0703 393 099
+              </p>
+              <p class="flex items-center">
+                <i class="fa fa-envelope w-5 h-5 text-green-500 mr-2"></i>
+                info@auftdart.com
+              </p>
+              <p class="flex items-center">
+                <i class="fa fa-facebook-f w-5 h-5 text-green-500 mr-2"></i>
+                <a href="https://facebook.com/auftdart" class="hover:underline"
+                  >facebook.com/auftdart</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Toggle mobile menu
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("mobile-menu");
+          menu.style.display =
+            menu.style.display === "none" || menu.style.display === ""
+              ? "block"
+              : "none";
+        });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+        breakpoints: {
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+          1440: { slidesPerView: 4 },
+        },
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
