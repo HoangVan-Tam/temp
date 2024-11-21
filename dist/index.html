@@ -28,7 +28,7 @@
           <img
             src="./images/logo-color.jpg"
             alt="Educate Logo"
-            class="w-44 h-12"
+            class="w-44 h-10 md:h-12 md:w-52"
           />
         </a>
         <!-- Menu for Large Screens -->
@@ -251,7 +251,7 @@
             <!-- Profile and Link -->
             <div class="flex items-center mt-8">
               <a
-                href="https://forms.gle/VdgfcKpHYaYHzZ6R7"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfGCWgipiAToi71Mle3VmsrR5UIrCJN5MbvfKnsdJE-zpq8jg/viewform"
                 class="default-btn-red"
               >
                 Tham Gia Ngay <span class="ml-2">→</span></a
@@ -480,13 +480,11 @@
     <section class="py-24">
       <div class="flex items-center justify-center">
         <div
-          class="border-2 border-red-1 text-white rounded-lg shadow-lg p-8 container"
+          class="border-2 border-red-1 text-white rounded-lg shadow-lg p-8 container flex flex-col items-center"
         >
-          <div
-            class="flex flex-col md:flex-row items-start md:items-center justify-between"
-          >
+          <div>
             <!-- Text content -->
-            <div class="md:w-3/4">
+            <div class="text-center">
               <h2 class="text-5xl md:text-4xl font-semibold mb-4 text-gray-800">
                 AUFTDART OPEN DAY<br />
                 Học sáng tạo - Chơi thông thái
@@ -498,13 +496,146 @@
             </div>
 
             <!-- Button -->
-            <div class="flex items-center mt-8">
+            <div class="flex justify-center items-center my-8">
               <a
-                href="https://forms.gle/VdgfcKpHYaYHzZ6R7"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfGCWgipiAToi71Mle3VmsrR5UIrCJN5MbvfKnsdJE-zpq8jg/viewform"
                 class="default-btn-red"
               >
                 Tham Gia Ngay <span class="ml-2">→</span></a
               >
+            </div>
+          </div>
+
+          <!-- Count down -->
+          <div class="flex items-center">
+            <div class="flex flex-wrap justify-center gap-6 text-gray-800">
+              <!-- Days -->
+              <div
+                class="relative flex flex-col justify-center items-center select-none"
+              >
+                <svg
+                  class="relative flex w-60 h-60 items-center justify-center transform -rotate-90"
+                >
+                  <circle
+                    class="text-slate-400"
+                    stroke="currentColor"
+                    stroke-width="8"
+                    cx="50%"
+                    cy="50%"
+                    r="96"
+                    fill="transparent"
+                  />
+                  <circle
+                    cx="50%"
+                    cy="50%"
+                    r="96"
+                    stroke="currentColor"
+                    id="daysCircle"
+                    stroke-linecap="round"
+                    stroke-width="8"
+                    fill="transparent"
+                    class="text-red-1 transition-all duration-500"
+                  />
+                </svg>
+                <span class="absolute text-7xl top-20" id="days"></span>
+                <span class="text-base text-gray-600 font-semibold">DAYS</span>
+              </div>
+
+              <!-- Hours -->
+              <div
+                class="relative flex flex-col justify-center items-center select-none"
+              >
+                <svg
+                  class="relative flex w-60 h-60 items-center justify-center transform -rotate-90"
+                >
+                  <circle
+                    class="text-slate-400"
+                    stroke="currentColor"
+                    stroke-width="8"
+                    cx="50%"
+                    cy="50%"
+                    r="96"
+                    fill="transparent"
+                  />
+                  <circle
+                    cx="50%"
+                    cy="50%"
+                    r="96"
+                    stroke="currentColor"
+                    id="hoursCircle"
+                    stroke-linecap="round"
+                    stroke-width="8"
+                    fill="transparent"
+                    class="text-red-1 transition-all duration-500"
+                  />
+                </svg>
+                <span class="absolute text-7xl top-20" id="hours"></span>
+                <span class="text-base text-gray-500">HOURS</span>
+              </div>
+
+              <!-- Minutes -->
+              <div
+                class="relative flex flex-col justify-center items-center select-none"
+              >
+                <svg
+                  class="relative flex w-60 h-60 items-center justify-center transform -rotate-90"
+                >
+                  <circle
+                    class="text-slate-400"
+                    stroke="currentColor"
+                    stroke-width="8"
+                    cx="50%"
+                    cy="50%"
+                    r="96"
+                    fill="transparent"
+                  />
+                  <circle
+                    cx="50%"
+                    cy="50%"
+                    r="96"
+                    stroke="currentColor"
+                    id="minutesCircle"
+                    stroke-linecap="round"
+                    stroke-width="8"
+                    fill="transparent"
+                    class="text-red-1 transition-all duration-500"
+                  />
+                </svg>
+                <span class="absolute text-7xl top-20" id="minutes"></span>
+                <span class="text-base text-gray-500">MINUTES</span>
+              </div>
+
+              <!-- Seconds -->
+              <div
+                class="relative flex flex-col justify-center items-center select-none"
+              >
+                <svg
+                  class="relative flex w-60 h-60 items-center justify-center transform -rotate-90"
+                >
+                  <circle
+                    class="text-slate-400"
+                    stroke="currentColor"
+                    stroke-width="8"
+                    cx="50%"
+                    cy="50%"
+                    r="96"
+                    fill="transparent"
+                  />
+                  <circle
+                    cx="50%"
+                    cy="50%"
+                    r="96"
+                    stroke="currentColor"
+                    id="secondsCircle"
+                    stroke-linecap="round"
+                    stroke-width="8"
+                    fill="transparent"
+                    class="text-red-1 transition-all duration-500"
+                  />
+                </svg>
+                <span class="absolute text-7xl top-20" id="seconds"></span>
+                <span class="text-base text-gray-500">SECONDS</span>
+              </div>
             </div>
           </div>
         </div>
@@ -520,15 +651,14 @@
           </h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-3">
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-3"
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+        >
           <!-- Card 1 -->
-          <div
-            class="bg-white rounded-lg p-6 shadow-lg text-center"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-offset="200"
-            data-aos-delay="500"
-          >
+          <div class="bg-white rounded-lg p-6 shadow-lg text-center">
             <div class="flex justify-center mb-4">
               <div
                 class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center"
@@ -552,13 +682,7 @@
           </div>
 
           <!-- Card 2 -->
-          <div
-            class="bg-white rounded-lg p-6 shadow-lg text-center"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-offset="200"
-            data-aos-delay="250"
-          >
+          <div class="bg-white rounded-lg p-6 shadow-lg text-center">
             <div class="flex justify-center mb-4">
               <div
                 class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center"
@@ -580,12 +704,7 @@
           </div>
 
           <!-- Card 3 -->
-          <div
-            class="bg-white rounded-lg p-6 shadow-lg text-center"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-offset="200"
-          >
+          <div class="bg-white rounded-lg p-6 shadow-lg text-center">
             <div class="flex justify-center mb-4">
               <div
                 class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center"
@@ -606,15 +725,14 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:px-36 pt-8">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:px-36 pt-8"
+          data-aos="fade-right"
+          data-aos-offset="250"
+          data-aos-duration="1000"
+        >
           <!-- Card 4 -->
-          <div
-            class="bg-white rounded-lg p-6 shadow-lg text-center"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-delay="250"
-            data-aos-offset="250"
-          >
+          <div class="bg-white rounded-lg p-6 shadow-lg text-center">
             <div class="flex justify-center mb-4">
               <div
                 class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center"
@@ -636,12 +754,7 @@
           </div>
 
           <!-- Card 5 -->
-          <div
-            class="bg-white rounded-lg p-6 shadow-lg text-center"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-offset="250"
-          >
+          <div class="bg-white rounded-lg p-6 shadow-lg text-center">
             <div class="flex justify-center mb-4">
               <div
                 class="w-16 h-16 bg-lime-100 rounded-full flex items-center justify-center"
@@ -682,7 +795,7 @@
             class="absolute bottom-[10%] inset-x-2/4 -translate-x-2/4 min-w-64 text-center"
           >
             <a
-              href="https://forms.gle/VdgfcKpHYaYHzZ6R7"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfGCWgipiAToi71Mle3VmsrR5UIrCJN5MbvfKnsdJE-zpq8jg/viewform"
               class="default-btn-red"
             >
               Tham Gia Ngay <span class="ml-2">→</span></a
@@ -704,7 +817,7 @@
               <img
                 src="./images/logo.png"
                 alt="Educate Logo"
-                class="h-28 lg:m-0"
+                class="h-20 lg:m-0"
                 style="width: 90%; max-width: 24rem"
                 loading="lazy"
               />
@@ -713,8 +826,8 @@
             <div class="mt-10 space-y-2 text-gray-300">
               <p class="flex items-center">
                 <i class="fa fa-map-marker w-5 h-5 text-green-500 mr-2"></i>
-                Global City, No. 4-6-8, Quarter 14, Do Xuan Hop Street, An Phu
-                Ward, Thu Duc City.
+                4-6-8, Đường số 4 (LK8), The Global City - Đồ Xuân Hợp - P. An
+                Phú - TP. Thủ Đức - TP. HCM
               </p>
             </div>
           </div>
@@ -736,7 +849,9 @@
               </p>
               <p class="flex items-center">
                 <i class="fa fa-facebook-f w-5 h-5 text-green-500 mr-2"></i>
-                <a href="https://facebook.com/auftdart" class="hover:underline"
+                <a
+                  href="https://www.facebook.com/profile.php?id=61561027617168"
+                  class="hover:underline"
                   >facebook.com/auftdart</a
                 >
               </p>
@@ -746,6 +861,69 @@
       </div>
     </footer>
 
+    <script>
+      function set_dialForSeconds() {
+        var element = document.getElementById("secondsCircle");
+        var number = document.getElementById("seconds");
+        var seconds = document.getElementById("seconds").innerHTML;
+        var percentage = seconds;
+        element.style.strokeDasharray = Math.round(Math.PI * (2 * 96));
+        element.style.strokeDashoffset =
+          Math.round(Math.PI * (2 * 96)) - (percentage / 60) * 604;
+        number.innerHTML = percentage;
+      }
+
+      set_dialForSeconds();
+
+      setInterval(() => set_dialForSeconds(), 1000);
+
+      function set_dialForMinutes() {
+        var element = document.getElementById("minutesCircle");
+        var number = document.getElementById("minutes");
+        var seconds = document.getElementById("minutes").innerHTML;
+        var percentage = seconds;
+        element.style.strokeDasharray = Math.round(Math.PI * (2 * 96));
+        element.style.strokeDashoffset =
+          Math.round(Math.PI * (2 * 96)) - (percentage / 60) * 604;
+        number.innerHTML = percentage;
+      }
+
+      set_dialForMinutes();
+
+      setInterval(() => set_dialForMinutes(), 1000);
+
+      function set_dialForHours() {
+        var element = document.getElementById("hoursCircle");
+        var number = document.getElementById("hours");
+        var seconds = document.getElementById("hours").innerHTML;
+        var percentage = seconds;
+        element.style.strokeDasharray = Math.round(Math.PI * (2 * 96));
+        element.style.strokeDashoffset =
+          Math.round(Math.PI * (2 * 96)) - (percentage / 24) * 604;
+        number.innerHTML = percentage;
+      }
+
+      set_dialForHours();
+
+      setInterval(() => set_dialForHours(), 1000);
+
+      setInterval(() => set_dialForMinutes(), 1000);
+
+      function set_dialForDays() {
+        var element = document.getElementById("daysCircle");
+        var number = document.getElementById("days");
+        var seconds = document.getElementById("days").innerHTML;
+        var percentage = seconds;
+        element.style.strokeDasharray = Math.round(Math.PI * (2 * 96));
+        element.style.strokeDashoffset =
+          Math.round(Math.PI * (2 * 96)) - (percentage / 30) * 604;
+        number.innerHTML = percentage;
+      }
+
+      set_dialForDays();
+
+      setInterval(() => set_dialForDays(), 1000);
+    </script>
     <script>
       // Toggle mobile menu
       document
@@ -782,6 +960,44 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <!--Count down-->
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Dec 7, 2024 00:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("days").innerHTML = "0";
+          document.getElementById("hours").innerHTML = "0";
+          document.getElementById("minutes").innerHTML = "0";
+          document.getElementById("seconds").innerHTML = "0";
+        }
+      }, 1000);
     </script>
   </body>
 </html>
