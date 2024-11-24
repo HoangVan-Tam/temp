@@ -7,6 +7,7 @@ module.exports = {
         red: { 1: "#EF482A", 2: "#E80F6D" },
         blue: { 1: "#4C96D1", 2: "#154D9F" },
         yellow: { 1: "#F3B817" },
+        gray:{1:"#4C4C4C"},
       },
       height: {
         128: "32rem",

@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auftdart</title>
-    <link rel="icon" href="./images/SOGE Logo_shape.png" type="image/x-icon" />
+    <link rel="icon" href="./SOGE Logo_shape.png" type="image/x-icon" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link href="./tailwind.css" rel="stylesheet" />
-    <link href="./style.css" rel="stylesheet" />
+    <link href="./assets/css/tailwind.css" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -19,34 +19,33 @@
   </head>
   <body class="font-sans overflow-x-hidden">
     <!-- Navbar -->
-    <nav class="bg-white shadow-lg fixed inset-0 z-10 h-fit w-screen">
+    <nav class="bg-white shadow-lg fixed inset-0 z-50 h-fit w-screen">
       <div
         class="container mx-auto flex justify-between items-center py-4 px-6"
       >
         <a href="#" class="flex items-center">
           <!-- Logo -->
           <img
-            src="./images/logo-color.jpg"
+            src="./assets/images/logo-color.jpg"
             alt="Educate Logo"
             class="w-44 h-10 md:h-12 md:w-52"
           />
         </a>
         <!-- Menu for Large Screens -->
         <div class="hidden md:flex space-x-6 font-semibold">
-          <a href="#info" class="text-gray-800 hover:text-red-1">THÔNG TIN</a>
-          <a href="#about" class="text-gray-800 hover:text-red-1"
-            >VỀ AUFTDART</a
+          <a href="#hoatdong" class="text-gray-800 hover:text-red-1"
+            >HOẠT ĐỘNG</a
           >
-          <a href="#teacher" class="text-gray-800 hover:text-red-1"
-            >GIẢNG VIÊN</a
+          <a href="#agenda" class="text-gray-800 hover:text-red-1">AGENDA</a>
+          <a href="#uudai" class="text-gray-800 hover:text-red-1">ƯU ĐÃI</a>
+          <a href="#thongtin" class="text-gray-800 hover:text-red-1"
+            >THÔNG TIN</a
           >
-
-          <a href="#reasons" class="text-gray-800 hover:text-red-1">LÝ DO</a>
-          <a href="#contact" class="text-gray-800 hover:text-red-1">LIÊN HỆ</a>
+          <a href="#lienhe" class="text-gray-800 hover:text-red-1">LIÊN HỆ</a>
         </div>
         <!-- Mobile Menu Button -->
         <button class="md:hidden text-gray-800" id="menu-toggle">
-          <img src="./images/menu.png" alt="Menu" class="w-6 h-6" />
+          <img src="./assets/images/menu.png" alt="Menu" class="w-6 h-6" />
         </button>
       </div>
 
@@ -56,25 +55,18 @@
         id="mobile-menu"
         style="display: none"
       >
-        <a href="#info" class="block px-6 py-2 text-gray-800 hover:text-red-1"
-          >THÔNG TIN</a
-        >
-        <a href="#about" class="block px-6 py-2 text-gray-800 hover:text-red-1"
-          >VỀ AUFTDART</a
-        >
         <a
-          href="#teacher"
+          href="#hoatdong"
           class="block px-6 py-2 text-gray-800 hover:text-red-1"
-          >GIẢNG VIÊN</a
+          >HOẠT ĐỘNG</a
         >
-        <a
-          href="#reasons"
-          class="block px-6 py-2 text-gray-800 hover:text-red-1"
-          >LÝ DO</a
+        <a href="#agenda" class="block px-6 py-2 text-gray-800 hover:text-red-1"
+          >AGENDA</a
         >
-        <a
-          href="#contact"
-          class="block px-6 py-2 text-gray-800 hover:text-red-1"
+        <a href="#uudai" class="block px-6 py-2 text-gray-800 hover:text-red-1"
+          >ƯU ĐÃI</a
+        >
+        <a href="#lienhe" class="block px-6 py-2 text-gray-800 hover:text-red-1"
           >LIÊN HỆ</a
         >
       </div>
@@ -86,20 +78,28 @@
         <picture>
           <source
             media="(min-width:1025px)"
-            srcset="./images/LandingPage-01.png"
+            srcset="./assets/images/LandingPage-01.png"
           />
-          <img src="./images/LandingPage-02.png" alt="auftdart-hero-banner" />
+          <img
+            src="./assets/images/Block1_Mobile.png"
+            alt="auftdart-hero-banner"
+          />
         </picture>
       </div>
     </section>
 
-    <section class="bg-blue-1/20 relative" id="info">
+    <!--HOAT DONG-->
+    <section class="relative" id="hoatdong">
       <div
         class="animation-rightLeft-1 w-12 h-12 rounded-lg absolute hidden lg:block lg:right-20 lg:inset-y-1/4 opacity-50"
       >
-        <img src="./images/piano-1.png" alt="auftdart-art" loading="lazy" />
+        <img
+          src="./assets/images/piano-1.png"
+          alt="auftdart-art"
+          loading="lazy"
+        />
       </div>
-      <div class="container mx-auto px-4 py-12 lg:py-24">
+      <div class="container mx-auto px-6 py-12 lg:py-24">
         <div class="flex flex-col items-center lg:flex-row">
           <!-- Left Image Placeholder -->
           <div
@@ -109,7 +109,7 @@
             data-aos-offset="300"
           >
             <img
-              src="./images/LandingPage-03.png"
+              src="./assets/images/LandingPage-21.png"
               alt="auftdart"
               class="rounded-lg"
               loading="lazy"
@@ -118,7 +118,7 @@
               class="animation-upDown-2 w-12 h-12 rounded-lg absolute hidden lg:block lg:inset-y-10 opacity-50"
             >
               <img
-                src="./images/music-1.png"
+                src="./assets/images/music-1.png"
                 alt="auftdart-music"
                 loading="lazy"
               />
@@ -126,7 +126,11 @@
             <div
               class="animation-leftRight-1 w-12 h-12 rounded-lg absolute hidden lg:block lg:right-0 lg:bottom-0 opacity-50"
             >
-              <img src="./images/art-1.png" alt="auftdart-art" loading="lazy" />
+              <img
+                src="./assets/images/art-1.png"
+                alt="auftdart-art"
+                loading="lazy"
+              />
             </div>
           </div>
 
@@ -138,120 +142,61 @@
             data-aos-offset="300"
           >
             <h1>
-              <span class="text-3xl lg:text-5xl font-bold text-gray-800">
-                AUFTDART OPEN DAY</span
+              <span class="text-3xl lg:text-4xl font-bold text-gray-800">
+                NGÀY TRẢI NGHIỆM KHOA HỌC</span
               ><br />
               <span class="block mt-4 text-xl lg:text-3xl font-semibold">
-                <span class="text-blue-2">Học sáng tạo</span
-                ><span class="text-yellow-1"> - </span
-                ><span class="text-red-1">Chơi thông thái</span>
+                <span class="text-blue-2">Tìm hiểu </span
+                ><span class="text-red-1">ĐẤT</span>
+                <span class="text-yellow-1"> & </span>
+                <span class="text-blue-1">NƯỚC</span>
               </span>
             </h1>
             <p class="text-gray-800 mt-2">
-              Hãy cùng trẻ khám phá chương trình học Acellus offline hoàn toàn
-              miễn phí tại Auftdart Open Day chỉ trong tháng 11 này!
+              Ngày trải nghiệm Khoa Học Mỹ nằm trong chuỗi các ngày trải nghiệm
+              tại Aufdart, giới thiệu với Phụ huynh chương trình học các môn
+              Toán, Khoa Học, Xã Hội, Ngữ Văn Mỹ bằng Tiếng Anh, giúp phụ huynh
+              có thêm các lựa chọn giáo dục phù hợp cho con.
             </p>
 
-            <!-- Statistics Section -->
-            <div class="flex mt-6 space-x-8">
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <!-- Card 1 -->
-                <div class="bg-white rounded-lg p-6 shadow-xl text-center">
-                  <div class="flex justify-center mb-4">
-                    <div
-                      class="w-16 h-16 bg-blue-1/30 rounded-full flex items-center justify-center"
-                    >
-                      <!-- Icon (Placeholder) -->
-                      <img
-                        src="./images/LandingPage-18.png"
-                        alt="Personalized Learning Icon"
-                        class="w-10 h-10"
-                        loading="lazy"
-                      />
-                    </div>
-                  </div>
-                  <h3 class="text-xl font-semibold mb-2">ĐỊA ĐIỂM</h3>
-                  <p class="text-gray-800">
-                    Global City, số 4-6-8, Khu phố 14, Phường An Phú, TP. Thủ
-                    Đức, TP. Hồ Chí Minh.
-                  </p>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="bg-white rounded-lg p-6 shadow-lg text-center">
-                  <div class="flex justify-center mb-4">
-                    <div
-                      class="w-16 h-16 bg-red-1/10 rounded-full flex items-center justify-center"
-                    >
-                      <!-- Icon (Placeholder) -->
-                      <img
-                        src="./images/LandingPage-17.png"
-                        alt="Trusted Content Icon"
-                        class="w-10 h-10"
-                        loading="lazy"
-                      />
-                    </div>
-                  </div>
-                  <h3 class="text-xl font-semibold mb-2">THỜI GIAN</h3>
-                  <p class="text-gray-800">
-                    8h00 - 16h00 ngày 16/11/2024 (Thứ 7)
-                  </p>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="bg-white rounded-lg p-6 shadow-lg text-center">
-                  <div class="flex justify-center mb-4">
-                    <div
-                      class="w-16 h-16 bg-yellow-1/20 rounded-full flex items-center justify-center"
-                    >
-                      <!-- Icon (Placeholder) -->
-                      <img
-                        src="./images/LandingPage-19.png"
-                        alt="Tool Empower Teachers Icon"
-                        class="w-10 h-10"
-                        loading="lazy"
-                      />
-                    </div>
-                  </div>
-                  <h3 class="text-xl font-semibold mb-2">HÌNH THỨC</h3>
-                  <p class="text-gray-800">Offline</p>
-                </div>
-              </div>
-            </div>
             <div class="mt-6 space-x-8 mb-8 lg:mb-0 space-y-4 lg:pr-10">
               <p class="text-gray-700">
-                Với phương pháp học tập Sáng tạo, Thực tế và Hấp dẫn được dẫn
-                dắt bởi các Giáo viên bản ngữ có chuyên môn Sư phạm giảng dạy,
-                trẻ sẽ được:
+                Tham gia với ngày trải nghiệm Khoa Học, các em sẽ được::
               </p>
               <p class="text-gray-700">
                 <span class="text-darkgreen-1 text-lg mr-2">&#10003;</span
                 ><strong
-                  >Tiếp cận chương trình kiến thức phổ thông của Mỹ -
-                  Acellus</strong
+                  >Trải nghiệm lớp học thử môn Khoa Học Mỹ bằng Tiếng
+                  Anh</strong
                 >
-                đã được pháp luật các nước như Anh, Mỹ, Úc công nhận với 4 môn
-                học chính: Mathematics, Language Arts, Science và Social Studies
+                với giảng viên nước ngoài nhiều kinh nghiệm, kết hợp giữa Tiếng
+                Anh và Khoa Học theo chương trình tiêu chuẩn phổ thông Mỹ
               </p>
               <p class="text-gray-700">
                 <span class="text-darkgreen-1 text-lg mr-2">&#10003;</span
                 ><strong
-                  >Mở rộng kiến thức bằng các trải nghiệm thực tế:</strong
+                  >Khám phá bí ẩn hai nguyên tố quan trọng – Đất và
+                  Nước:</strong
                 >
-                thực hành thí nghiệm khoa học, phát triển ý tưởng và ngôn ngữ
-                qua kể chuyện bằng hình ảnh,...
+                qua các hoạt động khoa học với kính hiển vi, thực hành làm máy
+                lọc nước và các hoạt động khác.
               </p>
               <p class="text-gray-700">
                 <span class="text-darkgreen-1 text-lg mr-2">&#10003;</span
-                ><strong
-                  >Rèn luyện tư duy và phản xạ tiếng Anh trong giao tiếp</strong
-                >
+                ><strong>Thỏa sức sáng tạo</strong>với các hoạt động thể chất,
+                nghệ thuật, đọc sách, Lego…
+              </p>
+              <p class="text-gray-700">
+                <span class="text-darkgreen-1 text-lg mr-2">&#10003;</span
+                ><strong>Thưởng thức tea-break</strong>và nhận những phần quà
+                hấp dẫn
               </p>
             </div>
             <!-- Profile and Link -->
             <div class="flex items-center mt-8">
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfGCWgipiAToi71Mle3VmsrR5UIrCJN5MbvfKnsdJE-zpq8jg/viewform"
+                target="_blank"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfGCWgipiAToi71Mle3VmsrR5UIrCJN5MbvfKnsdJE-zpq8jg/viewform?usp=sharing"
                 class="default-btn-red"
               >
                 Tham Gia Ngay <span class="ml-2">→</span></a
@@ -262,9 +207,957 @@
       </div>
     </section>
 
-    <section id="about">
+    <!--LOP TRAI NGHIEM-->
+    <section class="px-4 py-24 bg-gray-1/30">
+      <div class="mx-auto container">
+        <div class="text-center mb-10">
+          <h2 class="text-4xl font-bold mb-12">LỚP HỌC TRẢI NGHIỆM</h2>
+        </div>
+        <ul
+          role="list"
+          class="mx-auto grid grid-cols-1 gap-x-0 gap-y-0 sm:grid-cols-2 lg:grid-cols-2 space-y-3"
+        >
+          <li v-for="person in people" :key="person.name">
+            <ul role="list" class="mt-3 flex justify-center">
+              <div class="space-y-2">
+                <div
+                  class="group flex flex-col gap-1 rounded-lg text-gray"
+                  tabindex="1"
+                >
+                  <div
+                    class="group relative m-0 flex h-[430px] w-[100%] rounded-xl ring-gray-900/5 sm:mx-auto"
+                  >
+                    <div
+                      class="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70"
+                    >
+                      <img
+                        src="./assets/images/TaiNguyenDat.webp"
+                        class="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      style="background-color: Gray; width: 50%"
+                      class="p-3 rounded-xl opacity-60 absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-4 group-hover:scale-110 group-hover:opacity-100"
+                    >
+                      <h1 class="text-lg font-bold text-white">
+                        Lớp trải nghiệm Tài nguyên Đất
+                      </h1>
+                      <h2 class="text-m font-light text-gray-200">
+                        Khám phá bí mật của các loại Đất <br />Tìm hiểu sự kỳ
+                        diệu của Đất với cây trồng
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+
+          <li v-for="person in people" :key="person.name">
+            <ul role="list" class="mt-3 lg:mt-0 flex justify-center">
+              <div class="space-y-2">
+                <div
+                  class="group flex flex-col gap-1 rounded-lg text-gray"
+                  tabindex="1"
+                >
+                  <div
+                    class="group relative m-0 flex h-[430px] w-[100%] rounded-xl ring-gray-900/5 sm:mx-auto"
+                  >
+                    <div
+                      class="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70"
+                    >
+                      <img
+                        src="./assets/images/TaiNguyenNuoc.jpg"
+                        class="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      style="background-color: Gray; width: 50%"
+                      class="p-3 rounded-xl opacity-60 absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-4 group-hover:scale-110 group-hover:opacity-100"
+                    >
+                      <h1 class="text-lg font-bold text-white">
+                        Lớp trải nghiệm Tài nguyên Nước
+                      </h1>
+                      <h2 class="text-m font-light text-gray-200">
+                        Tìm hiểu vòng tuần hoàn của nước <br />
+                        Hiểu cơ chế lọc nước, Hô biến từ nước dơ thành nước sạch
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--CAC TRAI NGHIEM-->
+    <section class="px-4 py-24 container mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-4xl font-bold mb-12">CÁC TRẢI NGHIỆM</h2>
+      </div>
+      <div class="columns-1 md:columns-2 xl:columns-3 gap-7">
+        <div class="break-inside-avoid mb-8 relative group">
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="./assets/images/TeaBreak.jpg"
+            alt="tea break"
+          />
+          <h2
+            class="bg-blue-1 text-white text-lg font-bold text-center rounded-lg p-3"
+          >
+            Tea-break
+          </h2>
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+          >
+            <h2 class="text-white text-lg font-bold">Tea-break</h2>
+          </div>
+        </div>
+        <div class="break-inside-avoid mb-8 relative group">
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="./assets/images/DatSet.jpg"
+            alt="trai nghiem dat set"
+          />
+          <h2
+            class="bg-blue-1 text-white text-lg font-bold text-center rounded-lg p-3"
+          >
+            Tạo Hình Sáng Tạo Với Đất Sét
+          </h2>
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+          >
+            <h2 class="text-white text-lg font-bold">
+              Tạo Hình Sáng Tạo Với Đất Sét
+            </h2>
+          </div>
+        </div>
+        <div class="break-inside-avoid mb-8 relative group">
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="./assets/images/MayLocNuoc.jpg"
+            alt="thu nghiem may loc nuoc mini"
+          />
+          <h2
+            class="bg-yellow-1 text-white text-lg font-bold text-center rounded-lg p-3"
+          >
+            hử Nghiệm Máy lọc Nước Mini
+          </h2>
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+          >
+            <h2 class="text-white text-lg font-bold">
+              Thử Nghiệm Máy lọc Nước Mini
+            </h2>
+          </div>
+        </div>
+        <div class="break-inside-avoid mb-8 relative group">
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="./assets/images/OngNghiem.jpg"
+            alt="Kham pha bi an sau kinh hien vi"
+          />
+          <h2
+            class="bg-yellow-1 text-white text-lg font-bold text-center rounded-lg p-3"
+          >
+            Khám Phá Bí Ẩn Sau Kính Hiển Vi
+          </h2>
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+          >
+            <h2 class="text-white text-lg font-bold">
+              Khám Phá Bí Ẩn Sau Kính Hiển Vi
+            </h2>
+          </div>
+        </div>
+        <div class="break-inside-avoid mb-8 relative group">
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="./assets/images/TheChat.jpg"
+            alt="The chat"
+          />
+          <h2
+            class="bg-red-1 text-white text-lg font-bold text-center rounded-lg p-3"
+          >
+            Tham Gia Các Trò Chơi Thể Chất
+          </h2>
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+          >
+            <h2 class="w-[90%] text-center text-white text-lg font-bold">
+              Tham Gia Các Trò Chơi Thể Chất
+            </h2>
+          </div>
+        </div>
+        <div class="break-inside-avoid mb-8 relative group">
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="./assets/images/BoardGame.jpg"
+            alt="board game"
+          />
+          <h2
+            class="bg-red-1 text-white text-lg font-bold text-center rounded-lg p-3"
+          >
+            Vui Chơi Tự Do Với Sách Tương Tác, Lego, Board Games
+          </h2>
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+          >
+            <h2 class="w-[90%] text-center text-white text-lg font-bold">
+              Vui Chơi Tự Do Với Sách Tương Tác, Lego, Board Games
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--LICH TRINH-->
+    <section class="px-4 py-24 bg-yellow-1/30" id="agenda">
+      <div class="text-center mb-10">
+        <h2 class="text-4xl font-bold mb-12">LỊCH TRÌNH</h2>
+      </div>
+      <div x-data="{ openTab: 1 }" class="container mx-auto">
+        <div class="mx-auto">
+          <div
+            class="mb-8 flex space-x-4 p-2 bg-white rounded-lg shadow-md max-w-md mx-auto"
+          >
+            <button
+              x-on:click="openTab = 1"
+              :class="{ 'bg-blue-600 text-white': openTab === 1 }"
+              class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300"
+            >
+              SÁNG
+            </button>
+            <button
+              x-on:click="openTab = 2"
+              :class="{ 'bg-red-600 text-white': openTab === 2 }"
+              class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300"
+            >
+              CHIỀU
+            </button>
+          </div>
+
+          <!--AGENDA SÁNG-->
+          <div
+            x-show="openTab === 1"
+            class="transition-all duration-300 relative m-auto verical-line-divider grid grid-cols-1 xl:grid-cols-2"
+          >
+            <!-- Timeline 1 -->
+            <div class="w-full flex justify-center">
+              <div
+                class="z-10 h-fit bg-white border border-gray-300 rounded-lg shadow-lg xl:mt-0 max-w-lg"
+              >
+                <!-- Header Section -->
+                <div
+                  class="relative bg-blue-400 text-white p-4 rounded-t-lg header-cutout-right dot"
+                >
+                  <div class="flex items-center">
+                    <div
+                      class="bg-blue-600 rounded text-white text-lg font-bold h-10 w-10 flex items-center justify-center"
+                    >
+                      01
+                    </div>
+                    <div class="ml-4">
+                      <h2 class="text-sm font-semibold uppercase tracking-wide">
+                        8:30 - 9:00
+                      </h2>
+                      <h1 class="text-xl font-bold h-[60px]">
+                        Đón Phụ Huynh Và Học Sinh
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+                <!-- Content Section -->
+                <div class="p-4">
+                  <div>
+                    <img src="./assets/images/hinh1.png" alt="Graphic" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline 2 -->
+            <div class="w-full flex justify-center">
+              <div
+                class="z-10 bg-white border border-gray-300 rounded-lg shadow-lg mt-20 xl:mt-52 max-w-lg"
+              >
+                <!-- Header Section -->
+                <div
+                  class="relative bg-blue-400 text-white p-4 rounded-t-lg header-cutout-left dot"
+                >
+                  <div class="flex items-center">
+                    <div
+                      class="bg-blue-600 rounded text-white text-lg font-bold h-10 w-10 flex items-center justify-center"
+                    >
+                      02
+                    </div>
+                    <div class="ml-4">
+                      <h2 class="text-sm font-semibold uppercase tracking-wide">
+                        9:30 - 11:30
+                      </h2>
+                      <h1 class="text-xl font-bold h-[60px]">
+                        LỚP HỌC TRẢI NGHIỆM Tài Nguyên Đất Và Nước
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+                <!-- Content Section -->
+                <div class="p-4">
+                  <p class="text-gray-700 text-sm mb-4">
+                    Mỗi lớp học diễn ra trong vòng 30 phút. <br />
+                    9:30 | 10:10 | 10:50
+                  </p>
+                  <div>
+                    <img src="./assets/images/hinh2.png" alt="Graphic" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline 3 -->
+            <div class="w-full flex justify-center">
+              <div
+                class="z-10 h-fit bg-white border border-gray-300 rounded-lg shadow-lg mt-20 xl:mt-0 max-w-lg"
+              >
+                <!-- Header Section -->
+                <div
+                  class="relative bg-blue-400 text-white p-4 rounded-t-lg header-cutout-right dot"
+                >
+                  <div class="flex items-center">
+                    <div
+                      class="bg-blue-600 rounded text-white text-lg font-bold h-10 w-10 flex items-center justify-center"
+                    >
+                      03
+                    </div>
+                    <div class="ml-4">
+                      <h2 class="text-sm font-semibold uppercase tracking-wide">
+                        9:00 - 12:00
+                      </h2>
+                      <h1 class="text-xl font-bold h-[60px]">
+                        CÁC TRẢI NGHIỆM KHOA HỌC VÀ SÁNG TẠO
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+                <!-- Content Section -->
+                <div class="p-4">
+                  <div>
+                    <img src="./assets/images/hinh3.png" alt="Graphic" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline 4 -->
+            <div class="w-full flex justify-center">
+              <div
+                class="z-10 bg-white border border-gray-300 rounded-lg shadow-lg mt-20 xl:mt-52 max-w-lg"
+              >
+                <!-- Header Section -->
+                <div
+                  class="relative bg-blue-400 text-white p-4 rounded-t-lg header-cutout-left dot"
+                >
+                  <div class="flex items-center">
+                    <div
+                      class="bg-blue-600 rounded text-white text-lg font-bold h-10 w-10 flex items-center justify-center"
+                    >
+                      04
+                    </div>
+                    <div class="ml-4">
+                      <h2 class="text-sm font-semibold uppercase tracking-wide">
+                        11:30 - 12:00
+                      </h2>
+                      <h1 class="text-xl font-bold">
+                        Trò Chuyện Cùng Quản Lý Trường, Và Giáo Viên
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+                <!-- Content Section -->
+                <div class="p-4">
+                  <div>
+                    <img src="./assets/images/hinh4.png" alt="Graphic" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--AGENDA CHIỀU-->
+          <div
+            x-show="openTab === 2"
+            class="transition-all duration-300 relative m-auto verical-line-divider grid grid-cols-1 xl:grid-cols-2"
+          >
+            <!-- Timeline 1 -->
+            <div class="w-full flex justify-center">
+              <div
+                class="z-10 h-fit bg-white border border-gray-300 rounded-lg shadow-lg xl:mt-0 max-w-lg"
+              >
+                <!-- Header Section -->
+                <div
+                  class="relative bg-red-400 text-white p-4 rounded-t-lg header-cutout-right-red dot"
+                >
+                  <div class="flex items-center">
+                    <div
+                      class="bg-red-600 rounded text-white text-lg font-bold h-10 w-10 flex items-center justify-center"
+                    >
+                      01
+                    </div>
+                    <div class="ml-4">
+                      <h2 class="text-sm font-semibold uppercase tracking-wide">
+                        13:30 - 14:00
+                      </h2>
+                      <h1 class="text-xl font-bold h-[60px]">
+                        Đón Phụ Huynh Và Học Sinh
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+                <!-- Content Section -->
+                <div class="p-4">
+                  <div>
+                    <img src="./assets/images/hinh1.png" alt="Graphic" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline 2 -->
+            <div class="w-full flex justify-center">
+              <div
+                class="z-10 bg-white border border-gray-300 rounded-lg shadow-lg mt-20 xl:mt-52 max-w-lg"
+              >
+                <!-- Header Section -->
+                <div
+                  class="relative bg-red-400 text-white p-4 rounded-t-lg header-cutout-left-red dot"
+                >
+                  <div class="flex items-center">
+                    <div
+                      class="bg-red-600 rounded text-white text-lg font-bold h-10 w-10 flex items-center justify-center"
+                    >
+                      02
+                    </div>
+                    <div class="ml-4">
+                      <h2 class="text-sm font-semibold uppercase tracking-wide">
+                        14:30 - 16:30
+                      </h2>
+                      <h1 class="text-xl font-bold h-[60px]">
+                        LỚP HỌC TRẢI NGHIỆM Tài Nguyên Đất Và Nước
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+                <!-- Content Section -->
+                <div class="p-4">
+                  <p class="text-gray-700 text-sm mb-4">
+                    Mỗi lớp học diễn ra trong vòng 30 phút. <br />
+                    9:30 | 10:10 | 10:50
+                  </p>
+                  <div>
+                    <img src="./assets/images/hinh2.png" alt="Graphic" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline 3 -->
+            <div class="w-full flex justify-center">
+              <div
+                class="z-10 h-fit bg-white border border-gray-300 rounded-lg shadow-lg mt-20 xl:mt-0 max-w-lg"
+              >
+                <!-- Header Section -->
+                <div
+                  class="relative bg-red-400 text-white p-4 rounded-t-lg header-cutout-right-red dot"
+                >
+                  <div class="flex items-center">
+                    <div
+                      class="bg-red-600 rounded text-white text-lg font-bold h-10 w-10 flex items-center justify-center"
+                    >
+                      03
+                    </div>
+                    <div class="ml-4">
+                      <h2 class="text-sm font-semibold uppercase tracking-wide">
+                        14:00 - 17:00
+                      </h2>
+                      <h1 class="text-xl font-bold h-[60px]">
+                        CÁC TRẢI NGHIỆM KHOA HỌC VÀ SÁNG TẠO
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+                <!-- Content Section -->
+                <div class="p-4">
+                  <div>
+                    <img src="./assets/images/hinh3.png" alt="Graphic" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline 4 -->
+            <div class="w-full flex justify-center">
+              <div
+                class="z-10 bg-white border border-gray-300 rounded-lg shadow-lg mt-20 xl:mt-52 max-w-lg"
+              >
+                <!-- Header Section -->
+                <div
+                  class="relative bg-red-400 text-white p-4 rounded-t-lg header-cutout-left-red dot"
+                >
+                  <div class="flex items-center">
+                    <div
+                      class="bg-red-600 rounded text-white text-lg font-bold h-10 w-10 flex items-center justify-center"
+                    >
+                      04
+                    </div>
+                    <div class="ml-4">
+                      <h2 class="text-sm font-semibold uppercase tracking-wide">
+                        16:30 - 17:00
+                      </h2>
+                      <h1 class="text-xl font-bold">
+                        Trò Chuyện Cùng Quản Lý Trường, Và Giáo Viên
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+                <!-- Content Section -->
+                <div class="p-4">
+                  <div>
+                    <img src="./assets/images/hinh4.png" alt="Graphic" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UU DAI -->
+    <section class="relative" id="uudai">
       <div
-        class="container mx-auto py-24 px-4 flex flex-col lg:flex-row items-center"
+        class="animation-rightLeft-1 w-12 h-12 rounded-lg absolute hidden lg:block lg:right-20 lg:inset-y-1/4 opacity-50"
+      >
+        <img
+          src="./assets/images/piano-1.png"
+          alt="auftdart-art"
+          loading="lazy"
+        />
+      </div>
+      <div class="container mx-auto px-4 py-12 lg:py-24">
+        <div class="flex flex-col items-center lg:flex-row">
+          <!-- Left Image Placeholder -->
+          <div
+            class="lg:w-1/2 mt-12 lg:mt-0"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-offset="300"
+          >
+            <h1>
+              <span
+                class="leading-normal text-3xl lg:text-[2.8rem] font-bold text-gray-800"
+              >
+                Tham gia ngày trải nghiệm hoàn toàn miễn phí</span
+              >
+            </h1>
+
+            <!-- Statistics Section -->
+            <div class="flex mt-6 space-x-8">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-lg p-6 shadow-xl text-center">
+                  <div class="flex justify-center mb-4">
+                    <div
+                      class="w-24 h-24 bg-blue-1/30 rounded-full flex items-center justify-center"
+                    >
+                      <!-- Icon (Placeholder) -->
+                      <img
+                        src="./assets/images/gift.png"
+                        alt="Personalized Learning Icon"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="text-xl font-semibold mb-2">
+                    Rinh về thành phẩm khoa học và sáng tạo của chính mình
+                  </h3>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-lg p-6 shadow-lg text-center">
+                  <div class="flex justify-center mb-4">
+                    <div
+                      class="w-24 h-24 bg-red-1/10 rounded-full flex items-center justify-center"
+                    >
+                      <!-- Icon (Placeholder) -->
+                      <img
+                        src="./assets/images/discount.png"
+                        alt="Trusted Content Icon"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="text-xl font-semibold mb-2">
+                    Đặc biệt, nhận ưu đãi 20% khi đăng ký khóa học
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Count down -->
+            <div class="w-full justify-center md:flex mt-6">
+              <div class="md:grid grid-cols-4 text-gray-800 hidden">
+                <!-- Days -->
+                <div
+                  class="relative flex flex-col justify-center items-center select-none"
+                >
+                  <svg
+                    class="w-full relative flex items-center justify-center transform -rotate-90"
+                  >
+                    <circle
+                      class="text-slate-400"
+                      stroke="currentColor"
+                      stroke-width="4"
+                      cx="50%"
+                      cy="50%"
+                      r="48"
+                      fill="transparent"
+                    />
+                    <circle
+                      cx="50%"
+                      cy="50%"
+                      r="48"
+                      stroke="currentColor"
+                      id="daysCircle"
+                      stroke-linecap="round"
+                      stroke-width="4"
+                      fill="transparent"
+                      class="text-red-1 transition-all duration-500"
+                    />
+                  </svg>
+                  <span
+                    class="absolute text-gray-800 text-4xl top-[3.5rem]"
+                    id="days"
+                  ></span>
+                  <span class="text-base text-gray-600 font-semibold"
+                    >NGÀY</span
+                  >
+                </div>
+
+                <!-- Hours -->
+                <div
+                  class="relative flex flex-col justify-center items-center select-none"
+                >
+                  <svg
+                    class="w-full relative flex items-center justify-center transform -rotate-90"
+                  >
+                    <circle
+                      class="text-slate-400"
+                      stroke="currentColor"
+                      stroke-width="4"
+                      cx="50%"
+                      cy="50%"
+                      r="48"
+                      fill="transparent"
+                    />
+                    <circle
+                      cx="50%"
+                      cy="50%"
+                      r="48"
+                      stroke="currentColor"
+                      id="hoursCircle"
+                      stroke-linecap="round"
+                      stroke-width="4"
+                      fill="transparent"
+                      class="text-red-1 transition-all duration-500"
+                    />
+                  </svg>
+                  <span
+                    class="absolute text-gray-800 text-4xl top-[3.5rem]"
+                    id="hours"
+                  ></span>
+                  <span class="text-base text-gray-600 font-semibold">GIỜ</span>
+                </div>
+
+                <!-- Minutes -->
+                <div
+                  class="relative flex flex-col justify-center items-center select-none"
+                >
+                  <svg
+                    class="w-full relative flex items-center justify-center transform -rotate-90"
+                  >
+                    <circle
+                      class="text-slate-400"
+                      stroke="currentColor"
+                      stroke-width="4"
+                      cx="50%"
+                      cy="50%"
+                      r="48"
+                      fill="transparent"
+                    />
+                    <circle
+                      cx="50%"
+                      cy="50%"
+                      r="48"
+                      stroke="currentColor"
+                      id="minutesCircle"
+                      stroke-linecap="round"
+                      stroke-width="4"
+                      fill="transparent"
+                      class="text-red-1 transition-all duration-500"
+                    />
+                  </svg>
+                  <span
+                    class="absolute text-gray-800 text-4xl top-[3.5rem]"
+                    id="minutes"
+                  ></span>
+                  <span class="text-base text-gray-600 font-semibold"
+                    >PHÚT</span
+                  >
+                </div>
+
+                <!-- Seconds -->
+                <div
+                  class="relative flex flex-col justify-center items-center select-none"
+                >
+                  <svg
+                    class="w-full relative flex items-center justify-center transform -rotate-90"
+                  >
+                    <circle
+                      class="text-slate-400"
+                      stroke="currentColor"
+                      stroke-width="4"
+                      cx="50%"
+                      cy="50%"
+                      r="48"
+                      fill="transparent"
+                    />
+                    <circle
+                      cx="50%"
+                      cy="50%"
+                      r="48"
+                      stroke="currentColor"
+                      id="secondsCircle"
+                      stroke-linecap="round"
+                      stroke-width="4"
+                      fill="transparent"
+                      class="text-red-1 transition-all duration-500"
+                    />
+                  </svg>
+                  <span
+                    class="absolute text-gray-800 text-4xl top-[3.5rem]"
+                    id="seconds"
+                  ></span>
+                  <span class="text-base text-gray-600 font-semibold"
+                    >GIÂY</span
+                  >
+                </div>
+              </div>
+
+              <!--Mobile-->
+              <div class="relative grid grid-cols-4 text-gray-800 md:hidden">
+                <!-- Days -->
+                <div
+                  class="relative flex flex-col justify-center items-center select-none"
+                >
+                  <svg
+                    class="h-20 w-full relative flex items-center justify-center transform -rotate-90"
+                  >
+                    <circle
+                      class="text-slate-400"
+                      stroke="currentColor"
+                      stroke-width="4"
+                      cx="50%"
+                      cy="50%"
+                      r="24"
+                      fill="transparent"
+                    />
+                    <circle
+                      cx="50%"
+                      cy="50%"
+                      r="24"
+                      stroke="currentColor"
+                      id="daysCircleMobile"
+                      stroke-linecap="round"
+                      stroke-width="4"
+                      fill="transparent"
+                      class="text-red-1 transition-all duration-500"
+                    />
+                  </svg>
+                  <span
+                    class="absolute text-xl top-[1.7rem]"
+                    id="daysMobile"
+                  ></span>
+                  <span class="text-base text-gray-600 font-semibold"
+                    >NGÀY</span
+                  >
+                </div>
+
+                <!-- Hours -->
+                <div
+                  class="relative flex flex-col justify-center items-center select-none"
+                >
+                  <svg
+                    class="h-20 w-full relative flex items-center justify-center transform -rotate-90"
+                  >
+                    <circle
+                      class="text-slate-400"
+                      stroke="currentColor"
+                      stroke-width="4"
+                      cx="50%"
+                      cy="50%"
+                      r="24"
+                      fill="transparent"
+                    />
+                    <circle
+                      cx="50%"
+                      cy="50%"
+                      r="24"
+                      stroke="currentColor"
+                      id="hoursCircleMobile"
+                      stroke-linecap="round"
+                      stroke-width="4"
+                      fill="transparent"
+                      class="text-red-1 transition-all duration-500"
+                    />
+                  </svg>
+                  <span
+                    class="absolute text-xl top-[1.7rem]"
+                    id="hoursMobile"
+                  ></span>
+                  <span class="text-base text-gray-600 font-semibold">GIỜ</span>
+                </div>
+
+                <!-- Minutes -->
+                <div
+                  class="relative flex flex-col justify-center items-center select-none"
+                >
+                  <svg
+                    class="h-20 w-full relative flex items-center justify-center transform -rotate-90"
+                  >
+                    <circle
+                      class="text-slate-400"
+                      stroke="currentColor"
+                      stroke-width="4"
+                      cx="50%"
+                      cy="50%"
+                      r="24"
+                      fill="transparent"
+                    />
+                    <circle
+                      cx="50%"
+                      cy="50%"
+                      r="24"
+                      stroke="currentColor"
+                      id="minutesCircleMobile"
+                      stroke-linecap="round"
+                      stroke-width="4"
+                      fill="transparent"
+                      class="text-red-1 transition-all duration-500"
+                    />
+                  </svg>
+                  <span
+                    class="absolute text-xl top-[1.7rem]"
+                    id="minutesMobile"
+                  ></span>
+                  <span class="text-base text-gray-600 font-semibold"
+                    >PHÚT</span
+                  >
+                </div>
+
+                <!-- Seconds -->
+                <div
+                  class="relative flex flex-col justify-center items-center select-none"
+                >
+                  <svg
+                    class="h-20 w-full relative flex items-center justify-center transform -rotate-90"
+                  >
+                    <circle
+                      class="text-slate-400"
+                      stroke="currentColor"
+                      stroke-width="4"
+                      cx="50%"
+                      cy="50%"
+                      r="24"
+                      fill="transparent"
+                    />
+                    <circle
+                      cx="50%"
+                      cy="50%"
+                      r="24"
+                      stroke="currentColor"
+                      id="secondsCircleMobile"
+                      stroke-linecap="round"
+                      stroke-width="4"
+                      fill="transparent"
+                      class="text-red-1 transition-all duration-500"
+                    />
+                  </svg>
+                  <span
+                    class="absolute text-xl top-[1.7rem]"
+                    id="secondsMobile"
+                  ></span>
+                  <span class="text-base text-gray-600 font-semibold"
+                    >GIÂY</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Profile and Link -->
+            <div class="flex items-center mt-8">
+              <a
+                target="_blank"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfGCWgipiAToi71Mle3VmsrR5UIrCJN5MbvfKnsdJE-zpq8jg/viewform?usp=sharing"
+                class="default-btn-red"
+              >
+                Tham Gia Ngay <span class="ml-2">→</span></a
+              >
+            </div>
+          </div>
+
+          <!-- Right Content Section -->
+          <div
+            class="lg:w-1/2 lg:ml-24 relative"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-offset="300"
+          >
+            <img
+              src="./assets/images/LandingPage-03.png"
+              alt="auftdart"
+              class="rounded-lg"
+              loading="lazy"
+            />
+            <div
+              class="animation-upDown-2 w-12 h-12 rounded-lg absolute hidden lg:block lg:inset-y-10 opacity-50"
+            >
+              <img
+                src="./assets/images/music-1.png"
+                alt="auftdart-music"
+                loading="lazy"
+              />
+            </div>
+            <div
+              class="animation-leftRight-1 w-12 h-12 rounded-lg absolute hidden lg:block lg:right-0 lg:bottom-0 opacity-50"
+            >
+              <img
+                src="./assets/images/art-1.png"
+                alt="auftdart-art"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--THONG TIN TRUONG-->
+    <section id="thongtin" class="bg-blue-1/30">
+      <div
+        class="container mx-auto py-24 px-6 flex flex-col lg:flex-row items-center"
       >
         <!-- Text Content -->
         <div
@@ -279,30 +1172,41 @@
               <span class="text-darkgreen-1 text-lg mr-2">&#10003;</span>
               <p>
                 <strong>Auftdart - School of Gifted Education</strong>
-                tự hào là đơn vị tại Việt Nam tiên phong kết hợp
-                <strong>Giáo dục và Nghệ thuật</strong> trong Đào tạo Quốc tế
-                cấp bằng Tốt nghiệp Trung học Mỹ (Diploma) với hình thức học
-                hoàn toàn Offline.
+                ự hào là đơn vị tiên phong tại Việt Nam, kết hợp giữa hình thức
+                học Acellus Online với học kèm bổ trợ nâng cao kiến thức hoàn
+                toàn bằng tiếng Anh trực tiếp tại trường; được xây dựng trên nền
+                tảng vững chắc từ Auftdart Group và các tổ chức thành viên gồm:
+                Auftdart - Academy of Music and Performing Arts, với gần 12 năm
+                kinh nghiệm trong giáo dục âm nhạc và nghệ thuật biểu diễn;
+                Auftdart - Art Avenue, chuyên giáo dục hội họa; và Enlightening
+                Education Center, trung tâm hàng đầu cung cấp các chương trình
+                học thuật phổ thông quốc tế từ Hoa Kỳ.
               </p>
             </li>
             <li class="flex items-center text-gray-700">
               <span class="text-darkgreen-1 text-lg mr-2">&#10003;</span>
               <p>
-                Được tạo bệ phóng vững chắc bởi tiền thân là Auftdart - Academy
-                of Music and Performing Arts với gần 12 năm kinh nghiệm, và hệ
-                thống đào tạo chuyên sâu được nghiên cứu, phát triển bởi Viện
-                Khoa học và Công nghệ Quốc tế do tổ chức Acellus Academy cung
-                cấp, Auftdart - School of Gifted Education mang đến các chương
-                trình đào tạo giúp trẻ khám phá và phát triển bản thân một cách
-                Toàn diện và Sâu sắc:
+                Auftdart có đội ngũ Giảng viên bản ngữ dày dặn kinh nghiệm với
+                bằng cấp Sư phạm liên quan đến lĩnh vực giảng dạy giúp trẻ nâng
+                cao khả năng giao tiếp 100% bằng tiếng Anh xuyên suốt quá trình
+                học.
               </p>
             </li>
             <li class="flex items-center text-gray-700">
               <span class="text-darkgreen-1 text-lg mr-2">&#10003;</span>
               <p>
-                <strong>Chương trình Acellus Scholar (AS)</strong>, bao gồm: Hệ
-                phổ thông Mỹ Acellus kết hợp cùng các môn học Âm nhạc, Hội họa,
-                Kịch nghệ, Giáo dục thể chất và Phát triển tư duy đa chiều.
+                Với hệ thống đào tạo chuyên sâu, nghiên cứu và phát triển bởi
+                Viện Khoa học và Công nghệ Quốc tế của Acellus Academy, Auftdart
+                - School of Gifted Education mang đến những chương trình giúp
+                trẻ khám phá và phát triển toàn diện:
+              </p>
+            </li>
+            <li class="flex items-center text-gray-700">
+              <span class="text-darkgreen-1 text-lg mr-2">&#10003;</span>
+              <p>
+                <strong>Chương trình Acellus Scholar (AS),</strong> , bao gồm:
+                Hệ phổ thông Mỹ Acellus kết hợp cùng các môn học Âm nhạc, Hội
+                họa, Kịch nghệ, Giáo dục thể chất và Phát triển tư duy đa chiều.
               </p>
             </li>
             <li class="flex items-center text-gray-700">
@@ -318,7 +1222,7 @@
         <!-- Image Content -->
         <div class="lg:w-1/3">
           <img
-            src="./images/LandingPage-04.png"
+            src="./assets/images/LandingPage-04.png"
             alt="Students with folders"
             class="w-full h-auto rounded-lg animation-hero-border"
             loading="lazy"
@@ -327,486 +1231,8 @@
       </div>
     </section>
 
-    <section class="py-24 bg-red-1/30" id="teacher">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-10">
-          <h2 class="text-4xl font-bold">GIẢNG VIÊN</h2>
-        </div>
-
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper mb-20">
-            <!-- Team Member 1 -->
-            <div
-              class="border-t-4 border-white swiper-slide bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:border-blue-2 text-center"
-            >
-              <img
-                src="./images/LandingPage-06.png"
-                alt="Thầy Minh Trần"
-                class="w-full h-64 object-cover rounded-t-lg mb-4"
-                loading="lazy"
-              />
-              <h3 class="text-xl font-semibold h-[85px]">
-                Thầy Minh Trần <br />
-                <span class="text-base">Cello/Music Theory</span>
-              </h3>
-
-              <p class="text-gray-500 mt-3 mb-2 h-[240px]">
-                Thầy Minh tốt nghiệp Thạc sĩ Âm nhạc tại Viện Peabody của Johns
-                Hopkins University (USA). Thầy đã từng đạt giải Nhất giải thưởng
-                Olga von Hartz Owens (Hoa Kỳ) và là Đại diện của Viện âm nhạc
-                The Weill, Carnegie Hall.
-              </p>
-            </div>
-
-            <!-- Team Member 2 -->
-            <div
-              class="border-t-4 border-white swiper-slide bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:border-blue-2 text-center"
-            >
-              <img
-                src="./images/LandingPage-07.png"
-                alt="Cô Bùi Tuyết Minh"
-                class="w-full h-64 object-cover rounded-t-lg mb-4"
-                loading="lazy"
-              />
-              <h3 class="text-xl font-semibold h-[85px]">
-                Cô Bùi Tuyết Minh <br />
-                <span class="text-base">Vietnam Dance/ Movement Therapist</span>
-              </h3>
-
-              <p class="text-gray-500 mt-3 mb-2 h-[240px]">
-                Cô Minh là Founder và Director tại Vietnamese Dance/Movement
-                Therapy. Cô nhận bằng Thạc sĩ Dance/Movement Therapy tại Sarah
-                Lawrence College, New York từ năm 2015.
-              </p>
-            </div>
-
-            <!-- Team Member 3 -->
-            <div
-              class="border-t-4 border-white swiper-slide bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:border-blue-2 text-center"
-            >
-              <img
-                src="./images/LandingPage-10.png"
-                alt="Thầy Grant Stimpson"
-                class="w-full h-64 object-cover rounded-t-lg mb-4"
-                loading="lazy"
-              />
-              <h3 class="text-xl font-semibold h-[85px]">
-                Thầy Grant Stimpson <br />
-                <span class="text-base">Actor / Director</span>
-              </h3>
-
-              <p class="text-gray-500 mt-3 mb-2 h-[240px]">
-                Thầy Grant Stimpson tốt nghiệp trường Academy of Live and
-                Recorded Arts ở London. Thầy cũng là một Diễn viên gạo cội trong
-                ngành điện ảnh. Thầy từng xuất hiện trong các bộ phim viễn tưởng
-                Hollywood như: Jupiter Ascending (Người Thừa Kế Vũ Trụ) - 2012;
-                The Last Kingdom - 2017;... .
-              </p>
-            </div>
-
-            <!-- Team Member 4 -->
-            <div
-              class="border-t-4 border-white swiper-slide bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:border-blue-2 text-center"
-            >
-              <img
-                src="./images/LandingPage-08.png"
-                alt="Thầy Quốc Lộc"
-                class="w-full h-64 object-cover rounded-t-lg mb-4"
-                loading="lazy"
-              />
-              <h3 class="text-xl font-semibold h-[85px]">
-                Thầy Quốc Lộc <br />
-                <span class="text-base"
-                  >Graphic Design / Architectural Model Graphic Designer</span
-                >
-              </h3>
-
-              <p class="text-gray-500 mt-3 mb-2 h-[240px]">
-                Thầy Lộc tốt nghiệp trường Đại học Mỹ thuật và có hơn 6 năm kinh
-                nghiệm trong lĩnh vực kiến trúc, giảng dạy cho trẻ em.
-              </p>
-            </div>
-
-            <!-- Team Member 5 -->
-            <div
-              class="border-t-4 border-white swiper-slide bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:border-blue-2 text-center"
-            >
-              <img
-                src="./images/LandingPage-09.png"
-                alt="Cô Kim Tuyền"
-                class="w-full h-64 object-cover rounded-t-lg mb-4"
-                loading="lazy"
-              />
-              <h3 class="text-xl font-semibold h-[85px]">
-                Cô Kim Tuyền<br />
-                <span class="text-base">Artist</span>
-              </h3>
-
-              <p class="text-gray-500 mt-3 mb-2 h-[240px]">
-                Cô Tuyền tốt nghiệp trường Đại học Mỹ thuật và có nhiều năm kinh
-                nghiệm trong việc giảng dạy trẻ em tại các trường học nghệ
-                thuật.
-              </p>
-            </div>
-
-            <!-- Team Member 6 -->
-            <div
-              class="border-t-4 border-white swiper-slide bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:border-blue-2 text-center"
-            >
-              <img
-                src="./images/LandingPage-05.png"
-                alt="Thầy Văn Toàn"
-                class="w-full h-64 object-cover rounded-t-lg mb-4"
-                loading="lazy"
-              />
-              <h3 class="text-xl font-semibold h-[85px]">
-                Thầy Văn Toàn<br />
-                <span class="text-base">Huấn luyện viên</span>
-              </h3>
-
-              <p class="text-gray-500 mt-3 mb-2 h-[240px]">
-                Thầy đã từng đạt giải thưởng trong lĩnh vực Thể thao - Vô địch
-                CLB Boxing 2020. Thầy cũng là Huấn luyện viên môn Thể hình và
-                Fitness, Huấn luyện viên Kickboxing.
-              </p>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-24">
-      <div class="flex items-center justify-center">
-        <div
-          class="border-2 border-red-1 text-white rounded-lg shadow-lg p-8 container flex flex-col items-center"
-        >
-          <div>
-            <!-- Text content -->
-            <div class="text-center">
-              <h2 class="text-5xl md:text-4xl font-semibold mb-4 text-gray-800">
-                AUFTDART OPEN DAY<br />
-                Học sáng tạo - Chơi thông thái
-              </h2>
-              <p class="text-lg text-gray-800">
-                Hãy cùng trẻ khám phá chương trình học Acellus offline hoàn toàn
-                miễn phí tại Auftdart Open Day chỉ trong tháng 11 này!
-              </p>
-            </div>
-
-            <!-- Button -->
-            <div class="flex justify-center items-center my-8">
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfGCWgipiAToi71Mle3VmsrR5UIrCJN5MbvfKnsdJE-zpq8jg/viewform"
-                class="default-btn-red"
-              >
-                Tham Gia Ngay <span class="ml-2">→</span></a
-              >
-            </div>
-          </div>
-
-          <!-- Count down -->
-          <div class="flex items-center">
-            <div class="flex flex-wrap justify-center gap-6 text-gray-800">
-              <!-- Days -->
-              <div
-                class="relative flex flex-col justify-center items-center select-none"
-              >
-                <svg
-                  class="relative flex w-60 h-60 items-center justify-center transform -rotate-90"
-                >
-                  <circle
-                    class="text-slate-400"
-                    stroke="currentColor"
-                    stroke-width="8"
-                    cx="50%"
-                    cy="50%"
-                    r="96"
-                    fill="transparent"
-                  />
-                  <circle
-                    cx="50%"
-                    cy="50%"
-                    r="96"
-                    stroke="currentColor"
-                    id="daysCircle"
-                    stroke-linecap="round"
-                    stroke-width="8"
-                    fill="transparent"
-                    class="text-red-1 transition-all duration-500"
-                  />
-                </svg>
-                <span class="absolute text-7xl top-20" id="days"></span>
-                <span class="text-base text-gray-600 font-semibold">DAYS</span>
-              </div>
-
-              <!-- Hours -->
-              <div
-                class="relative flex flex-col justify-center items-center select-none"
-              >
-                <svg
-                  class="relative flex w-60 h-60 items-center justify-center transform -rotate-90"
-                >
-                  <circle
-                    class="text-slate-400"
-                    stroke="currentColor"
-                    stroke-width="8"
-                    cx="50%"
-                    cy="50%"
-                    r="96"
-                    fill="transparent"
-                  />
-                  <circle
-                    cx="50%"
-                    cy="50%"
-                    r="96"
-                    stroke="currentColor"
-                    id="hoursCircle"
-                    stroke-linecap="round"
-                    stroke-width="8"
-                    fill="transparent"
-                    class="text-red-1 transition-all duration-500"
-                  />
-                </svg>
-                <span class="absolute text-7xl top-20" id="hours"></span>
-                <span class="text-base text-gray-500">HOURS</span>
-              </div>
-
-              <!-- Minutes -->
-              <div
-                class="relative flex flex-col justify-center items-center select-none"
-              >
-                <svg
-                  class="relative flex w-60 h-60 items-center justify-center transform -rotate-90"
-                >
-                  <circle
-                    class="text-slate-400"
-                    stroke="currentColor"
-                    stroke-width="8"
-                    cx="50%"
-                    cy="50%"
-                    r="96"
-                    fill="transparent"
-                  />
-                  <circle
-                    cx="50%"
-                    cy="50%"
-                    r="96"
-                    stroke="currentColor"
-                    id="minutesCircle"
-                    stroke-linecap="round"
-                    stroke-width="8"
-                    fill="transparent"
-                    class="text-red-1 transition-all duration-500"
-                  />
-                </svg>
-                <span class="absolute text-7xl top-20" id="minutes"></span>
-                <span class="text-base text-gray-500">MINUTES</span>
-              </div>
-
-              <!-- Seconds -->
-              <div
-                class="relative flex flex-col justify-center items-center select-none"
-              >
-                <svg
-                  class="relative flex w-60 h-60 items-center justify-center transform -rotate-90"
-                >
-                  <circle
-                    class="text-slate-400"
-                    stroke="currentColor"
-                    stroke-width="8"
-                    cx="50%"
-                    cy="50%"
-                    r="96"
-                    fill="transparent"
-                  />
-                  <circle
-                    cx="50%"
-                    cy="50%"
-                    r="96"
-                    stroke="currentColor"
-                    id="secondsCircle"
-                    stroke-linecap="round"
-                    stroke-width="8"
-                    fill="transparent"
-                    class="text-red-1 transition-all duration-500"
-                  />
-                </svg>
-                <span class="absolute text-7xl top-20" id="seconds"></span>
-                <span class="text-base text-gray-500">SECONDS</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Block 5 Section -->
-    <section class="bg-blue-1/30" id="reasons">
-      <div class="container px-4 py-24 mx-auto">
-        <div class="text-center mb-8">
-          <h2 class="text-4xl font-bold mb-12">
-            5 LÝ DO VÌ SAO NÊN CHỌN AUFTDART?
-          </h2>
-        </div>
-
-        <div
-          class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-3"
-          data-aos="fade-right"
-          data-aos-offset="200"
-          data-aos-duration="1000"
-        >
-          <!-- Card 1 -->
-          <div class="bg-white rounded-lg p-6 shadow-lg text-center">
-            <div class="flex justify-center mb-4">
-              <div
-                class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center"
-              >
-                <!-- Icon (Placeholder) -->
-                <img
-                  src="./images/LandingPage-13.png"
-                  alt="Personalized Learning Icon"
-                  class="w-10 h-10"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">
-              Chương Trình Đào Tạo Theo Chuẩn Hệ Mỹ
-            </h3>
-            <p class="text-gray-800">
-              Acellus được thẩm định bởi tổ chức giáo dục Accrediting commission
-              for school - ACS WASC.
-            </p>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="bg-white rounded-lg p-6 shadow-lg text-center">
-            <div class="flex justify-center mb-4">
-              <div
-                class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center"
-              >
-                <!-- Icon (Placeholder) -->
-                <img
-                  src="./images/LandingPage-15.png"
-                  alt="Trusted Content Icon"
-                  class="w-10 h-10"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Kinh Nghiệm</h3>
-            <p class="text-gray-800">
-              Đội ngũ giảng viên bản ngữ dày dặn kinh nghiệm với bằng cấp Sư
-              phạm liên quan đến lĩnh vực giảng dạy
-            </p>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="bg-white rounded-lg p-6 shadow-lg text-center">
-            <div class="flex justify-center mb-4">
-              <div
-                class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center"
-              >
-                <!-- Icon (Placeholder) -->
-                <img
-                  src="./images/LandingPage-14.png"
-                  alt="Tool Empower Teachers Icon"
-                  class="w-10 h-10"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Kết Hợp Hài Hoà</h3>
-            <p class="text-gray-800">
-              Kết hợp giữa Học thuật, Nghệ thuật, và Thể chất một cách toàn diện
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:px-36 pt-8"
-          data-aos="fade-right"
-          data-aos-offset="250"
-          data-aos-duration="1000"
-        >
-          <!-- Card 4 -->
-          <div class="bg-white rounded-lg p-6 shadow-lg text-center">
-            <div class="flex justify-center mb-4">
-              <div
-                class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center"
-              >
-                <!-- Icon (Placeholder) -->
-                <img
-                  src="./images/LandingPage-20.png"
-                  alt="Personalized Learning Icon"
-                  class="w-10 h-10"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Chứng Nhận Quốc Tế</h3>
-            <p class="text-gray-800">
-              Nhận bằng tốt nghiệp Trung học phổ thông Mỹ theo chuẩn Common Core
-              State Standards được công nhận trên toàn thế giới
-            </p>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="bg-white rounded-lg p-6 shadow-lg text-center">
-            <div class="flex justify-center mb-4">
-              <div
-                class="w-16 h-16 bg-lime-100 rounded-full flex items-center justify-center"
-              >
-                <!-- Icon (Placeholder) -->
-                <img
-                  src="./images/LandingPage-16.png"
-                  alt="Trusted Content Icon"
-                  class="w-10 h-10"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Học Phí</h3>
-            <p class="text-gray-800">Tối ưu hóa chi phí học tập</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-cover bg-center about-container">
-      <!-- Join Section -->
-      <div class="h-80 lg:h-128 bg-black relative">
-        <div class="h-full w-full">
-          <picture>
-            <source
-              media="(min-width:1025px)"
-              srcset="./images/LandingPage-11.png"
-            />
-            <img
-              src="./images/LandingPage-12.png"
-              alt="Flowers"
-              class="object-cover"
-              loading="lazy"
-            />
-          </picture>
-          <div
-            class="absolute bottom-[10%] inset-x-2/4 -translate-x-2/4 min-w-64 text-center"
-          >
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfGCWgipiAToi71Mle3VmsrR5UIrCJN5MbvfKnsdJE-zpq8jg/viewform"
-              class="default-btn-red"
-            >
-              Tham Gia Ngay <span class="ml-2">→</span></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Footer Section -->
-    <footer class="bg-gray-800 text-white font-sans" id="contact">
+    <footer class="bg-gray-800 text-white font-sans" id="lienhe">
       <div class="container mx-auto py-20">
         <div
           class="flex flex-col lg:flex-row lg:items-center justify-between items-start px-4"
@@ -815,7 +1241,7 @@
             <div class="flex items-center">
               <!-- Logo -->
               <img
-                src="./images/logo.png"
+                src="./assets/images/logo.png"
                 alt="Educate Logo"
                 class="h-20 lg:m-0"
                 style="width: 90%; max-width: 24rem"
@@ -867,9 +1293,9 @@
         var number = document.getElementById("seconds");
         var seconds = document.getElementById("seconds").innerHTML;
         var percentage = seconds;
-        element.style.strokeDasharray = Math.round(Math.PI * (2 * 96));
+        element.style.strokeDasharray = Math.round(Math.PI * (2 * 48));
         element.style.strokeDashoffset =
-          Math.round(Math.PI * (2 * 96)) - (percentage / 60) * 604;
+          Math.round(Math.PI * (2 * 48)) - (percentage / 60) * 302;
         number.innerHTML = percentage;
       }
 
@@ -882,9 +1308,9 @@
         var number = document.getElementById("minutes");
         var seconds = document.getElementById("minutes").innerHTML;
         var percentage = seconds;
-        element.style.strokeDasharray = Math.round(Math.PI * (2 * 96));
+        element.style.strokeDasharray = Math.round(Math.PI * (2 * 48));
         element.style.strokeDashoffset =
-          Math.round(Math.PI * (2 * 96)) - (percentage / 60) * 604;
+          Math.round(Math.PI * (2 * 48)) - (percentage / 60) * 302;
         number.innerHTML = percentage;
       }
 
@@ -897,9 +1323,9 @@
         var number = document.getElementById("hours");
         var seconds = document.getElementById("hours").innerHTML;
         var percentage = seconds;
-        element.style.strokeDasharray = Math.round(Math.PI * (2 * 96));
+        element.style.strokeDasharray = Math.round(Math.PI * (2 * 48));
         element.style.strokeDashoffset =
-          Math.round(Math.PI * (2 * 96)) - (percentage / 24) * 604;
+          Math.round(Math.PI * (2 * 48)) - (percentage / 24) * 302;
         number.innerHTML = percentage;
       }
 
@@ -907,16 +1333,14 @@
 
       setInterval(() => set_dialForHours(), 1000);
 
-      setInterval(() => set_dialForMinutes(), 1000);
-
       function set_dialForDays() {
         var element = document.getElementById("daysCircle");
         var number = document.getElementById("days");
         var seconds = document.getElementById("days").innerHTML;
         var percentage = seconds;
-        element.style.strokeDasharray = Math.round(Math.PI * (2 * 96));
+        element.style.strokeDasharray = Math.round(Math.PI * (2 * 48));
         element.style.strokeDashoffset =
-          Math.round(Math.PI * (2 * 96)) - (percentage / 30) * 604;
+          Math.round(Math.PI * (2 * 48)) - (percentage / 30) * 302;
         number.innerHTML = percentage;
       }
 
@@ -924,80 +1348,16 @@
 
       setInterval(() => set_dialForDays(), 1000);
     </script>
-    <script>
-      // Toggle mobile menu
-      document
-        .getElementById("menu-toggle")
-        .addEventListener("click", function () {
-          const menu = document.getElementById("mobile-menu");
-          menu.style.display =
-            menu.style.display === "none" || menu.style.display === ""
-              ? "block"
-              : "none";
-        });
-    </script>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        spaceBetween: 20,
-        pagination: {
-          el: ".swiper-pagination",
-          dynamicBullets: true,
-        },
-        breakpoints: {
-          640: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-          1440: { slidesPerView: 4 },
-        },
-      });
-    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
 
-    <!--Count down-->
-    <script>
-      // Set the date we're counting down to
-      var countDownDate = new Date("Dec 7, 2024 00:00:00").getTime();
-
-      // Update the count down every 1 second
-      var x = setInterval(function () {
-        // Get today's date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Output the result in an element with id="demo"
-        document.getElementById("days").innerHTML = days;
-        document.getElementById("hours").innerHTML = hours;
-        document.getElementById("minutes").innerHTML = minutes;
-        document.getElementById("seconds").innerHTML = seconds;
-
-        // If the count down is over, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("days").innerHTML = "0";
-          document.getElementById("hours").innerHTML = "0";
-          document.getElementById("minutes").innerHTML = "0";
-          document.getElementById("seconds").innerHTML = "0";
-        }
-      }, 1000);
-    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"
+      defer
+    ></script>
+    <script src="./assets/js/custom.js"></script>
   </body>
 </html>
