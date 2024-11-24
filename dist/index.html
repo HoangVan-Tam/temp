@@ -499,7 +499,7 @@
                       <h2 class="text-sm font-semibold uppercase tracking-wide">
                         9:30 - 11:30
                       </h2>
-                      <h1 class="text-xl font-bold h-[60px]">
+                      <h1 class="text-xl font-bold h-[90px] md:h-[60px]">
                         LỚP HỌC TRẢI NGHIỆM Tài Nguyên Đất Và Nước
                       </h1>
                     </div>
@@ -537,7 +537,7 @@
                       <h2 class="text-sm font-semibold uppercase tracking-wide">
                         9:00 - 12:00
                       </h2>
-                      <h1 class="text-xl font-bold h-[60px]">
+                      <h1 class="text-xl font-bold h-[90px] md:h-[60px]">
                         CÁC TRẢI NGHIỆM KHOA HỌC VÀ SÁNG TẠO
                       </h1>
                     </div>
@@ -645,7 +645,7 @@
                       <h2 class="text-sm font-semibold uppercase tracking-wide">
                         14:30 - 16:30
                       </h2>
-                      <h1 class="text-xl font-bold h-[60px]">
+                      <h1 class="text-xl font-bold h-[90px] md:h-[60px]">
                         LỚP HỌC TRẢI NGHIỆM Tài Nguyên Đất Và Nước
                       </h1>
                     </div>
@@ -683,7 +683,7 @@
                       <h2 class="text-sm font-semibold uppercase tracking-wide">
                         14:00 - 17:00
                       </h2>
-                      <h1 class="text-xl font-bold h-[60px]">
+                      <h1 class="text-xl font-bold h-[90px] md:h-[60px]">
                         CÁC TRẢI NGHIỆM KHOA HỌC VÀ SÁNG TẠO
                       </h1>
                     </div>
@@ -747,8 +747,41 @@
           loading="lazy"
         />
       </div>
-      <div class="container mx-auto px-4 py-12 lg:py-24">
+      <div class="container mx-auto px-4 py-24 lg:py-24">
         <div class="flex flex-col items-center lg:flex-row">
+          <!-- Right Content Section -->
+          <div
+            class="relative lg:hidden"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-offset="300"
+          >
+            <img
+              src="./assets/images/LandingPage-03.png"
+              alt="auftdart"
+              class="rounded-lg"
+              loading="lazy"
+            />
+            <div
+              class="animation-upDown-2 w-12 h-12 rounded-lg absolute hidden lg:block lg:inset-y-10 opacity-50"
+            >
+              <img
+                src="./assets/images/music-1.png"
+                alt="auftdart-music"
+                loading="lazy"
+              />
+            </div>
+            <div
+              class="animation-leftRight-1 w-12 h-12 rounded-lg absolute hidden lg:block lg:right-0 lg:bottom-0 opacity-50"
+            >
+              <img
+                src="./assets/images/art-1.png"
+                alt="auftdart-art"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
           <!-- Left Image Placeholder -->
           <div
             class="lg:w-1/2 mt-12 lg:mt-0"
@@ -1120,10 +1153,9 @@
 
           <!-- Right Content Section -->
           <div
-            class="lg:w-1/2 lg:ml-24 relative"
+            class="lg:w-1/2 lg:ml-24 relative lg:block hidden"
             data-aos="fade-right"
             data-aos-duration="1500"
-            data-aos-offset="300"
           >
             <img
               src="./assets/images/LandingPage-03.png"

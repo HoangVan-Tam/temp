@@ -174,7 +174,12 @@ a {
   .header-cutout-left::before,
   .header-cutout-left::after,
   .header-cutout-right::before,
-  .header-cutout-right::after{
+  .header-cutout-right::after,
+  .header-cutout-right-red::before,
+  .header-cutout-right-red::after,
+  .header-cutout-left-red::before,
+  .header-cutout-left-red::after
+  {
     display: none;
   }
 }
