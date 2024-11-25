@@ -209,88 +209,70 @@
 
     <!--LOP TRAI NGHIEM-->
     <section class="px-4 py-24 bg-gray-1/30">
-      <div class="mx-auto container">
+      <div class="mx-auto container h-full">
         <div class="text-center mb-10">
           <h2 class="text-4xl font-bold mb-12">LỚP HỌC TRẢI NGHIỆM</h2>
         </div>
-        <ul
-          role="list"
-          class="mx-auto grid grid-cols-1 gap-x-0 gap-y-0 sm:grid-cols-2 lg:grid-cols-2 space-y-3"
-        >
-          <li v-for="person in people" :key="person.name">
-            <ul role="list" class="mt-3 flex justify-center">
-              <div class="space-y-2">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-x-3">
+          <div class="space-y-2">
+            <div class="group flex flex-col gap-1 rounded-lg text-gray">
+              <div
+                class="group relative m-0 flex h-[40vh] md:h-[430px] w-[100%] rounded-xl ring-gray-900/5 sm:mx-auto"
+              >
                 <div
-                  class="group flex flex-col gap-1 rounded-lg text-gray"
-                  tabindex="1"
+                  class="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70"
                 >
-                  <div
-                    class="group relative m-0 flex h-[430px] w-[100%] rounded-xl ring-gray-900/5 sm:mx-auto"
-                  >
-                    <div
-                      class="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70"
-                    >
-                      <img
-                        src="./assets/images/TaiNguyenDat.webp"
-                        class="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      style="background-color: Gray; width: 50%"
-                      class="p-3 rounded-xl opacity-60 absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-4 group-hover:scale-110 group-hover:opacity-100"
-                    >
-                      <h2 class="text-lg font-bold text-white">
-                        Lớp trải nghiệm Tài nguyên Đất
-                      </h2>
-                      <h3 class="text-m font-light text-gray-200">
-                        Khám phá bí mật của các loại Đất <br />Tìm hiểu sự kỳ
-                        diệu của Đất với cây trồng
-                      </h3>
-                    </div>
-                  </div>
+                  <img
+                    src="./assets/images/TaiNguyenDat.jpg"
+                    class="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
+                    alt=""
+                  />
+                </div>
+                <div
+                  style="background-color: Gray"
+                  class="w-[60%] md:w-[50%] p-3 rounded-xl opacity-60 absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-4 group-hover:scale-110 group-hover:opacity-100"
+                >
+                  <h2 class="text-lg font-bold text-white">
+                    Lớp trải nghiệm Tài nguyên Đất
+                  </h2>
+                  <h3 class="text-m font-light text-gray-200">
+                    Khám phá bí mật của các loại Đất <br />Tìm hiểu sự kỳ diệu
+                    của Đất với cây trồng
+                  </h3>
                 </div>
               </div>
-            </ul>
-          </li>
-
-          <li v-for="person in people" :key="person.name">
-            <ul role="list" class="mt-3 lg:mt-0 flex justify-center">
-              <div class="space-y-2">
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="group flex flex-col gap-1 rounded-lg text-gray">
+              <div
+                class="group relative m-0 flex h-[40vh] w-[100%] md:h-[430px] rounded-xl ring-gray-900/5 sm:mx-auto"
+              >
                 <div
-                  class="group flex flex-col gap-1 rounded-lg text-gray"
-                  tabindex="1"
+                  class="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70"
                 >
-                  <div
-                    class="group relative m-0 flex h-[430px] w-[100%] rounded-xl ring-gray-900/5 sm:mx-auto"
-                  >
-                    <div
-                      class="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70"
-                    >
-                      <img
-                        src="./assets/images/TaiNguyenNuoc.jpg"
-                        class="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      style="background-color: Gray; width: 50%"
-                      class="p-3 rounded-xl opacity-60 absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-4 group-hover:scale-110 group-hover:opacity-100"
-                    >
-                      <h2 class="text-lg font-bold text-white">
-                        Lớp trải nghiệm Tài nguyên Nước
-                      </h2>
-                      <h3 class="text-m font-light text-gray-200">
-                        Tìm hiểu vòng tuần hoàn của nước <br />
-                        Hiểu cơ chế lọc nước, Hô biến từ nước dơ thành nước sạch
-                      </h3>
-                    </div>
-                  </div>
+                  <img
+                    src="./assets/images/TaiNguyenNuoc.jpg"
+                    class="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
+                    alt=""
+                  />
+                </div>
+                <div
+                  style="background-color: Gray"
+                  class="w-[60%] md:w-[50%] p-3 rounded-xl opacity-60 absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-4 group-hover:scale-110 group-hover:opacity-100"
+                >
+                  <h2 class="text-lg font-bold text-white">
+                    Lớp trải nghiệm Tài nguyên Nước
+                  </h2>
+                  <h3 class="text-m font-light text-gray-200">
+                    Tìm hiểu vòng tuần hoàn của nước <br />
+                    Hiểu cơ chế lọc nước, Hô biến từ nước dơ thành nước sạch
+                  </h3>
                 </div>
               </div>
-            </ul>
-          </li>
-        </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -406,7 +388,7 @@
       </div>
       <div class="container mx-auto">
         <div class="mx-auto">
-          <div
+          <!-- <div
             class="mb-8 flex space-x-4 p-2 bg-white rounded-lg shadow-md max-w-md mx-auto"
           >
             <button
@@ -419,7 +401,7 @@
             >
               CHIỀU
             </button>
-          </div>
+          </div> -->
 
           <div class="flex flex-col">
             <!--AGENDA SÁNG-->
@@ -427,7 +409,7 @@
               class="transition-all space duration-300 relative m-auto verical-line-divider grid grid-cols-1 xl:grid-cols-2 xl:gap-x-40"
             >
               <!-- Timeline 1 -->
-              <div class="w-full flex justify-center lg:justify-end">
+              <div class="w-full flex justify-center xl:justify-end">
                 <div
                   class="z-10 h-fit bg-white border border-gray-300 rounded-lg shadow-lg xl:mt-0 max-w-lg"
                 >
@@ -450,7 +432,9 @@
               </div>
 
               <!-- Timeline 2 -->
-              <div class="w-full flex justify-center lg:justify-start xl:mt-20">
+              <div
+                class="w-full flex justify-center xl:justify-start mt-10 xl:mt-20"
+              >
                 <div
                   class="z-10 h-fit bg-white border border-gray-300 rounded-lg shadow-lg xl:mt-0 max-w-lg"
                 >
@@ -479,7 +463,9 @@
               </div>
 
               <!-- Timeline 3 -->
-              <div class="w-full flex justify-center lg:justify-end">
+              <div
+                class="w-full flex justify-center xl:justify-end mt-10 xl:mt-0"
+              >
                 <div
                   class="z-10 h-fit bg-white border border-gray-300 rounded-lg shadow-lg xl:mt-0 max-w-lg"
                 >
@@ -502,7 +488,9 @@
               </div>
 
               <!-- Timeline 4 -->
-              <div class="w-full flex justify-center lg:justify-start xl:mt-20">
+              <div
+                class="w-full flex justify-center xl:justify-start mt-10 xl:mt-20"
+              >
                 <div
                   class="z-10 h-fit bg-white border border-gray-300 rounded-lg shadow-lg xl:mt-0 max-w-lg"
                 >
@@ -530,7 +518,7 @@
               class="transition-all duration-300 relative m-auto verical-line-divider grid grid-cols-1 xl:grid-cols-2 xl:gap-x-40"
             >
               <!-- Timeline 1 -->
-              <div class="w-full flex justify-center lg:justify-end mt-10">
+              <div class="w-full flex justify-center xl:justify-end mt-10">
                 <div
                   class="z-10 h-fit bg-white border border-gray-300 rounded-lg shadow-lg xl:mt-0 max-w-lg"
                 >
@@ -542,7 +530,7 @@
                       <div
                         class="bg-red-600 rounded text-white text-lg font-bold flex items-center justify-center"
                       >
-                        <p class="px-3">8:30 - 9:00</p>
+                        <p class="px-3">13:30 - 14:00</p>
                       </div>
                       <h2 class="text-xl font-bold">
                         Đón Phụ Huynh Và Học Sinh
@@ -553,7 +541,9 @@
               </div>
 
               <!-- Timeline 2 -->
-              <div class="w-full flex justify-center lg:justify-start xl:mt-32">
+              <div
+                class="w-full flex justify-center xl:justify-start mt-10 xl:mt-32"
+              >
                 <div
                   class="z-10 h-fit bg-white border border-gray-300 rounded-lg shadow-lg xl:mt-0 max-w-lg"
                 >
@@ -565,7 +555,7 @@
                       <div
                         class="bg-red-600 rounded text-white text-lg font-bold flex items-center justify-center"
                       >
-                        <p class="px-3">9:30 - 11:30</p>
+                        <p class="px-3">14:30 - 16:30</p>
                       </div>
                       <h2 class="text-xl font-bold">
                         LỚP HỌC TRẢI NGHIỆM tài nguyên Đất và Nước
@@ -574,15 +564,18 @@
                   </div>
                   <div class="p-4">
                     <p class="text-gray-700 text-sm mb-4">
-                      Mỗi lớp học diễn ra trong vòng 30 phút. <br />
-                      9:30 | 10:10 | 10:50
+                      MMỗi lớp học diễn ra trong vòng 30 phút.
+                      <br />
+                      14:30 | 15:10 | 15:50
                     </p>
                   </div>
                 </div>
               </div>
 
               <!-- Timeline 3 -->
-              <div class="w-full flex justify-center lg:justify-end">
+              <div
+                class="w-full flex justify-center mt-10 xl:mt-0 lg:justify-end"
+              >
                 <div
                   class="z-10 h-fit bg-white border border-gray-300 rounded-lg shadow-lg xl:mt-0 max-w-lg"
                 >
@@ -594,7 +587,7 @@
                       <div
                         class="bg-red-600 rounded text-white text-lg font-bold flex items-center justify-center"
                       >
-                        <p class="px-3">9:00 - 12:00</p>
+                        <p class="px-3">14:00 - 17:00</p>
                       </div>
                       <h2 class="text-xl font-bold">
                         CÁC TRẢI NGHIỆM KHOA HỌC VÀ SÁNG TẠO
@@ -605,7 +598,9 @@
               </div>
 
               <!-- Timeline 4 -->
-              <div class="w-full flex justify-center lg:justify-start xl:mt-20">
+              <div
+                class="w-full flex justify-center xl:justify-start mt-10 xl:mt-20"
+              >
                 <div
                   class="z-10 h-fit bg-white border border-gray-300 rounded-lg shadow-lg xl:mt-0 max-w-lg"
                 >
@@ -617,7 +612,7 @@
                       <div
                         class="bg-red-600 rounded text-white text-lg font-bold flex items-center justify-center"
                       >
-                        <p class="px-3">11:30 - 12:00</p>
+                        <p class="px-3">16:30 - 17:00</p>
                       </div>
                       <h2 class="text-xl font-bold">
                         Trò chuyện cùng Quản Lý Trường, và Giáo viên
@@ -1052,6 +1047,7 @@
             class="lg:w-1/2 lg:ml-24 relative lg:block hidden"
             data-aos="fade-right"
             data-aos-duration="1500"
+            data-aos-offset="0"
           >
             <img
               src="./assets/images/LandingPage-03.png"
@@ -1083,7 +1079,7 @@
     </section>
 
     <!--THONG TIN TRUONG-->
-    <section id="thongtin w-full overflow-x-hidden" class="bg-blue-1/30">
+    <section id="thongtin" class="bg-blue-1/30 w-full overflow-x-hidden">
       <div
         class="container mx-auto py-24 px-6 grid grid-cols-1 lg:grid-cols-3 items-center"
       >
@@ -1144,63 +1140,63 @@
         <div>
           <div class="swiper mySwiper">
             <div class="swiper-wrapper mb-20">
-              <!-- Team Member 1 -->
+              <!-- Slide 1 -->
               <div class="swiper-slide">
-                <img
-                  src="./assets/images/LandingPage-04.png"
-                  alt="Students with folders"
-                  class="w-full h-auto rounded-lg animation-hero-border"
-                  loading="lazy"
-                />
+                <div class="h-[330px]">
+                  <img
+                    src="./assets/images/LandingPage-04.png"
+                    alt="Students with folders"
+                    class="w-full h-full object-cover object-top rounded-lg animation-hero-border"
+                    loading="lazy"
+                  />
+                </div>
               </div>
 
-              <!-- Team Member 2 -->
+              <!-- Slide 2 -->
               <div class="swiper-slide">
-                <img
-                  src="./assets/images/LandingPage-04.png"
-                  alt="Students with folders"
-                  class="w-full h-auto rounded-lg animation-hero-border"
-                  loading="lazy"
-                />
+                <div class="h-[330px]">
+                  <img
+                    src="./assets/images/hinh1.jpg"
+                    alt="Students with folders"
+                    class="w-full h-full object-cover rounded-lg animation-hero-border"
+                    loading="lazy"
+                  />
+                </div>
               </div>
 
-              <!-- Team Member 3 -->
+              <!-- Slide 3 -->
               <div class="swiper-slide">
-                <img
-                  src="./assets/images/LandingPage-04.png"
-                  alt="Students with folders"
-                  class="w-full h-auto rounded-lg animation-hero-border"
-                  loading="lazy"
-                />
+                <div class="h-[330px]">
+                  <img
+                    src="./assets/images/hinh2.jpg"
+                    alt="Students with folders"
+                    class="w-full h-full object-cover rounded-lg animation-hero-border"
+                    loading="lazy"
+                  />
+                </div>
               </div>
-              <!-- Team Member 4 -->
+              <!-- Slide 4 -->
               <div class="swiper-slide">
-                <img
-                  src="./assets/images/LandingPage-04.png"
-                  alt="Students with folders"
-                  class="w-full h-auto rounded-lg animation-hero-border"
-                  loading="lazy"
-                />
-              </div>
-
-              <!-- Team Member 5 -->
-              <div class="swiper-slide">
-                <img
-                  src="./assets/images/LandingPage-04.png"
-                  alt="Students with folders"
-                  class="w-full h-auto rounded-lg animation-hero-border"
-                  loading="lazy"
-                />
+                <div class="h-[330px]">
+                  <img
+                    src="./assets/images/hinh3.jpg"
+                    alt="Students with folders"
+                    class="w-full h-full object-cover rounded-lg animation-hero-border"
+                    loading="lazy"
+                  />
+                </div>
               </div>
 
-              <!-- Team Member 6 -->
+              <!-- Slide 5 -->
               <div class="swiper-slide">
-                <img
-                  src="./assets/images/LandingPage-04.png"
-                  alt="Students with folders"
-                  class="w-full h-auto rounded-lg animation-hero-border"
-                  loading="lazy"
-                />
+                <div class="h-[330px]">
+                  <img
+                    src="./assets/images/hinh4.jpg"
+                    alt="Students with folders"
+                    class="w-full h-full object-cover rounded-lg animation-hero-border"
+                    loading="lazy"
+                  />
+                </div>
               </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -1213,9 +1209,9 @@
     <footer class="bg-gray-800 text-white font-sans" id="lienhe">
       <div class="container mx-auto py-20">
         <div
-          class="flex flex-col lg:flex-row lg:items-center justify-between items-start px-4"
+          class="flex flex-col lg:flex-row lg:items-center justify-between items-start px-4 lg:gap-x-6"
         >
-          <div class="text-center lg:text-left">
+          <div class="text-center lg:text-left md:w-2/3">
             <div class="flex items-center">
               <!-- Logo -->
               <img
@@ -1253,11 +1249,10 @@
           </div>
 
           <!-- Right Section -->
-          <div
-            class="mt-8 lg:mt-0 flex flex-col justify-between"
-            style="height: 165px"
-          >
-            <div class="space-y-2 text-gray-300"></div>
+          <div class="mt-8 lg:mt-0 flex flex-col justify-between md:w-1/3">
+            <div class="space-y-2 text-gray-300">
+              <img src="assets/images/Tagline.png" alt="auftdart" />
+            </div>
           </div>
         </div>
       </div>

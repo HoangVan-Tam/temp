@@ -172,7 +172,7 @@ document.getElementById("menu-toggle").addEventListener("click", function () {
 //Initialize Swiper
 var swiper = new Swiper(".mySwiper", {
   autoplay: {
-    delay: 2000,
+    delay: 3000,
   },
   speed: 1000,
   loop: true,
