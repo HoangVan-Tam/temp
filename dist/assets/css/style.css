@@ -90,44 +90,43 @@ a {
   }
 }
 
-.verical-line-divider::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    border: 0.5px solid rgba(191, 191, 191, 1);
+.verical-line-divider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border: 0.5px solid rgba(191, 191, 191, 1);
 }
 /* Custom CSS for the header cutout shape */
 
 .header-cutout-right::after,
-.header-cutout-right-red::after
-{
+.header-cutout-right-red::after {
   z-index: -1;
-  content: '';
+  content: "";
   position: absolute;
   top: 19%;
-  right: -25px;
+  right: -20px;
   width: 0;
   height: 0;
   border-top: 35px solid transparent;
   border-bottom: 35px solid transparent;
 }
-.header-cutout-right::after{
+.header-cutout-right::after {
   border-left: 50px solid #60a5fa;
 }
-.header-cutout-right-red::after{
-  border-left: 50px solid #F77171;
+.header-cutout-right-red::after {
+  border-left: 50px solid #f77171;
 }
 
-.header-cutout-left{
+.header-cutout-left {
   z-index: 2;
 }
 
 .header-cutout-left-red::after,
-.header-cutout-left::after{
+.header-cutout-left::after {
   z-index: -1;
-  content: '';
+  content: "";
   position: absolute;
   top: 19%;
   left: -20px;
@@ -136,16 +135,15 @@ a {
   border-top: 35px solid transparent;
   border-bottom: 35px solid transparent;
 }
-.header-cutout-left::after{
+.header-cutout-left::after {
   border-right: 50px solid #60a5fa;
 }
-.header-cutout-left-red::after{
-  border-right: 50px solid #F77171;
+.header-cutout-left-red::after {
+  border-right: 50px solid #f77171;
 }
 
 .header-cutout-left::before,
-.header-cutout-left-red::before
-{
+.header-cutout-left-red::before {
   position: absolute;
   content: "";
   width: 9px;
@@ -153,12 +151,11 @@ a {
   background-color: #bdbdbd;
   border-radius: 9px;
   box-shadow: 0px 0px 2px 8px #f7f7f7;
-  left: -13.5%;
-  top:45%;
+  left: calc(-46px + -8%);
+  top: 50%;
 }
 .header-cutout-right-red::before,
-.header-cutout-right::before
-{
+.header-cutout-right::before {
   position: absolute;
   content: "";
   width: 9px;
@@ -166,8 +163,8 @@ a {
   background-color: #bdbdbd;
   border-radius: 9px;
   box-shadow: 0px 0px 2px 8px #f7f7f7;
-  left: 112%;
-  top:45%;
+  left: calc(77px + 100%);
+  top: 52%;
 }
 
 @media (max-width: 1279px) {
@@ -178,11 +175,7 @@ a {
   .header-cutout-right-red::before,
   .header-cutout-right-red::after,
   .header-cutout-left-red::before,
-  .header-cutout-left-red::after
-  {
+  .header-cutout-left-red::after {
     display: none;
   }
 }
-
-
-
